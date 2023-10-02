@@ -92,6 +92,9 @@ nav:
          - "Søgning" : "tutorials/search.md"
          - "Avanceret søgning" : "tutorials/advanced-search.md"
    - "App- og UserSettings" : "tutorials/Settings/settings.md"
+   - "Logging" :
+      - "Log i applikationen" : "tutorials/Logging/log_application.md"
+      - "Brug af NLog" : "tutorials/Logging/nlog.md"
 - "Baggrund" :
     - "Tanken bag" : "guide/need.md"
     - "Visionen" : "guide/intro.md"
