@@ -10,6 +10,6 @@ Hvis der er valgt f.eks. DbContext, som nedenfor, så vises listen med entiteter
 
 ![](media/CodeTasksCustomization-1.png)
 
-"Customization" er specielt velegnet, hvor der er mange Code Tasks. Nedenfor vises "Customize" for "User Interface".
+"Customize" er specielt velegnet, hvor der er mange Code Tasks. Nedenfor vises "Customize" for "User Interface".
 
 ![Alt text](media/CodeTasksCustomization-2.png)

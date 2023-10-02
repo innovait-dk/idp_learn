@@ -1,5 +1,8 @@
 site_name: Learn Innova Developer Platform
 
+repo_url: https://github.com/innovait-dk/idp_learn
+edit_uri: edit/main/docs/
+
 markdown_extensions:
    - meta
    - admonition
@@ -17,6 +20,8 @@ extra_css:
 plugins:
    - search
    - glightbox
+   - git-revision-date-localized:
+      enable_creation_date: false
    #- unused_files
   # - htmlproofer
 
@@ -28,6 +33,7 @@ theme:
       - navigation.tabs
       - navigation.footer
       - content.code.copy
+      - content.action.edit
    favicon: media/favicon.ico
    logo: media/innova.png
    palette:
