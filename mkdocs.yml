@@ -1,0 +1,99 @@
+site_name: Innova Developer Platform
+
+markdown_extensions:
+   - meta
+   - admonition
+   - attr_list
+   - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+   - md_in_html
+   - toc:
+      permalink: true
+
+extra_css:
+   - stylesheets/extra.css
+
+plugins:
+   - search
+   - glightbox
+   #- unused_files
+  # - htmlproofer
+
+
+theme:
+   name: material
+   language: da
+   features:
+      - navigation.tabs
+      - navigation.footer
+      - content.code.copy
+   favicon: media/favicon.ico
+   logo: media/innova.png
+   palette:
+      primary: white
+   font:
+      code: Roboto Mono
+     
+nav:
+- "Forside" : "index.md"
+- "Kom i gang" : 
+   - "Opsætning af Visual Studio" : "gettingstarted/visualstudio.md"
+   - "Første applikation" : "guide/wizard.md"
+- "Designer" : 
+   - "Introduktion til designer" : "guide/elements/designer.md"
+   - "Processen" : "guide/elements/concept.md"
+   - "Oversigt arkitektur elementer" : "guide/elements/elements-overview.md"
+- "Arkitektur elementer" : 
+   - "Database" : "guide/elements/database.md"
+   - "Entity Framework" : "guide/elements/entityframework.md"
+   - "Validation" : "guide/elements/validation.md"
+   - "Resx" : "guide/elements/resx.md"
+   - "Resx Syncing EntityCaptions" : "guide/elements/captions.md"
+   - "User Interface" : "guide/elements/wpf-ui.md"
+   - "AppSettings" : "guide/elements/appsettings.md"
+   - "UserSettings" : "guide/elements/usersettings.md"
+   - "Revision" : "guide/elements/revision.md"
+   - "Security" : "guide/elements/security.md"
+   
+- "How-To-Guides" : 
+   - "Sådan tilpasses" :
+      - "Partial classes" : "tutorials/index.md"
+      - "Code Tasks - Configuration" : "tutorials/CodeTasksConfiguration.md"
+      - "Code Tasks - Customization" : "tutorials/CodeTasksCustomization.md"
+   - "Entity Framework" : 
+      - "Entity" : "tutorials/Entity/Entity.md"
+      - "Entity Factory" : "tutorials/Entity/EntityFactory.md"
+   - "Validation" : 
+      - "Basic" : "tutorials/Validation/validation.md"
+      - "Andre eksempler" : "tutorials/Validation/custom-validation.md"
+      - "Validering af viewmodel" : "tutorials/Validation/viewmodel-validation.md"
+   - "User Interface" :
+      - "Mapper - Custom data-Property" : "tutorials/UI/Mapper.md"
+      - "Mapper - Custom List-Property" : "tutorials/UI/Mapper-Template.md"
+      - "Detail-Control" : "tutorials/UI/Detail-Control.md"
+      - "View - Custom Show" : "tutorials/custom-show-view.md"
+      - "Custom-Control på et felt" : "tutorials/custom-control-on-one-field.md"
+      - "ListView - Custom property" : "tutorials/custom-field-on-list.md"
+      - "Tilpas kontrolrelation" : "tutorials/custom-control-relation.md"
+      - "Filupload" : 
+         - "Filupload" : "tutorials/fileupload/index.md"
+         - "1 felt (bytes)" : "tutorials/fileupload/1-field.md"
+         - "2 felter (bytes og filnavn)" : "tutorials/fileupload/2-fields.md"
+         - "3 felter (bytes, filnavn og miniaturebillede)" : "tutorials/fileupload/3-fields.md"
+         - "Andre konfigurationer" : "tutorials/fileupload/other-configurations.md"
+      - "Dropdown med 'tilføj-ny' funktionalitet" : "tutorials/dropdown-with-add.md"
+      - "Tilpas indsættelses- og opdateringslogik" : "tutorials/Custom-insert-og-update-logic.md"
+      - "Menu" :
+         - "Tilføje Menu" : "tutorials/UI/add-menubutton.md"
+         - "MenuService" : "tutorials/UI/menuservice.md"
+      - "Søgning" :
+         - "Opret hurtigfind" : "tutorials/add-quickfind.md"
+         - "Søgning" : "tutorials/search.md"
+         - "Avanceret søgning" : "tutorials/advanced-search.md"
+   - "App- og UserSettings" : "tutorials/Settings/settings.md"
+- "Baggrund" :
+    - "Tanken bag" : "guide/need.md"
+    - "Visionen" : "guide/intro.md"
+    - "Produktet" : "guide/product.md"
+    - "Processen" : "guide/process.md"

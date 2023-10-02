@@ -1,0 +1,57 @@
+
+
+## Implementering af security
+
+Det man som udvikler skal tage stilling til er hvordan sikkerheden skal være. Altså hvordan skal man definere hvilken rolle eller roller den enkelte bruger skal have.
+
+Det er meget forskelligt fra applikation til applikation, hvordan det skal være.
+
+I Northwind er der implmenteret en Users-tabel, hvor brugeren oprettes og man angiver hvilken rolle brugeren har.
+
+![](media/security_2021-04-06-15-26-36.png)
+
+Det to tabeller er derefter lagt ind i applikationen via det normale IAD-funktionalitet (vha ).
+
+Kobling til "Security" sker i SecurityRole-tabellen, hvor man opretter de to poster "user" og administrator og den GUID, der vises inde i security elementet.
+
+![](media/security_2021-04-06-15-30-21.png)
+
+Navnet behøver ikke være det samme. Så SecurityRole-tabellen ser således ud:
+
+![](media/security_2021-04-06-15-54-56.png)
+
+Og for UserSecurity kan man nu oprette brugere og angive hvilken rolle brugeren har.
+
+![](media/security_2021-04-06-16-12-52.png)
+
+Nu mangler man kun at implementere selv sikkerheden i koden.
+
+I partial class'en for den kodegeneret securitymodel overrider man metoden "AuthenticateUser" og implementer sin sikkerhed.
+Her henter vi først brugeren ud fra login for currentuser, forespørger databasen via unitofwork og tilføjer rolle-guid'en til "AddUserRoles".
+
+```csharp
+        protected override void AuthenticateUser()
+        {
+            base.AuthenticateUser();
+            var name = WindowsIdentity.GetCurrent().Name;
+            var factory = new Entity.NorthwindUnitOfWorkFactory();
+            using (var uow = factory.Create() as Entity.INorthwindUnitOfWork)
+            {
+                var param = new UserSecurityQueryParameter(e => e.UserLogin == name);
+                var user = uow.UserSecurity.Get(param);
+                if (user != null)
+                {
+                    this.AddUserRoles(new List<Guid>() { user.SecurityRole.RoleGuid.Value });
+                }
+                else
+                {
+                    throw new SecurityException("User not created");
+                }
+            }
+
+        }
+```
+
+Og så er sikkerheden implementeret.
+
+Der kan som sagt være rigtig mange måder man vil implementere sikkerheden på og det vil typisk være forskelligt fra applikation til applikation.

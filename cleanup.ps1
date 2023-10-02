@@ -1,0 +1,1 @@
+#Get-ChildItem .\docs\ | Where { (Get-ChildItem .\docs\*.md | Select-String $_.Name).Count -eq 0 } | ForEach { $_.FullName } | Remove-Item

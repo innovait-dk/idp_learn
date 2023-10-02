@@ -1,0 +1,58 @@
+
+Eksempel:
+
+``
+this.heading=Settings.AppSetting.Default.Header
+``
+
+Hvis man vil gør det muligt for f.eks. en administrator af applikationen at vedligeholde appsettings inde i applikationen kan det gøres ved at implementere en proptergrid.
+
+Det gøres ved at:
+
+1. Implementere en viewmodel
+2. Registrere viewmodel'en og et view, som er en del af politi-framework'et.
+3. Lave en knap der navigere til view'et.
+
+### Implementere en viewmodel
+
+Nedenstående viewmodel laves manuelt:
+
+    public class AppSettingViewModel : AppSettingViewmodel<Settings.AppSetting>
+    {
+        protected override void Configure()
+        {
+
+        }
+        protected override void Load()
+        {
+            AppSetting.Default.LoadData();
+
+            this.Settings = AppSetting.Default;
+        }
+
+        protected override void OnSaveCommand()
+        {
+            AppSetting.Default.SaveData();
+        }
+    }
+
+### Registrere viewmodel'en og et view
+
+I UIbootstrapper registeres ovenstående viewmodel og et view, der er standard i politi-frameworket.
+
+            SimpleIoc.Default.Register<Politi.MvvmLight.Telerik.Views.PropertyGrid.AppSettingViewmodel, AppSettingViewModel>();
+            SimpleIoc.Default.Register<AppSettingView>();
+
+### Lave en knap der navigere til view'et
+
+I Northwind-applikationen er der lavet en tab, der hedder administration, hvor der er implementeret en "appsettings"-knap. Når man klikker på knappen vises en propergrid med alle appsettings.
+
+![Admninistration](media/appsettings_2021-04-06-14-14-48.png)
+
+Her kan man nu rette den enkelte setting og klikke på "Gem". Værdierne vil herefter gemmes i SQL tabellen.
+
+![Gem appsetting](media/appsettings_2021-04-06-14-15-56.png)
+
+Selve layout'et af propertygriden kan styres vha de andre felter i konfiguration, som ved en normal propertygrid.
+
+![Grid settings](media/appsettings_2021-04-06-14-19-30.png)

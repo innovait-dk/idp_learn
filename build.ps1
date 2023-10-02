@@ -1,0 +1,1 @@
+mkdocs build -c -d  "C:\temp\IDPdocs_site" 
