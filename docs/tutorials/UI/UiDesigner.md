@@ -1,10 +1,14 @@
-Som standard vises felterne i show-views som en lang liste.
+Som standard vises felterne i show/edit/insert-views som en lang liste.
 
 ![Alt text](media/UiDesigner.png)
 
 Med Ui-designeren kan det nemt tilpasses, så felter bliver grupperet og placeret mere logisk.
 
 ![Alt text](media/UiDesigner-1.png)
+
+Og som edit-view:
+
+![Alt text](media/UiDesigner-2.png)
 
 Se hvordan i videoen.
 
