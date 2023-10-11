@@ -80,6 +80,7 @@ nav:
       - "Custom-Control på et felt" : "tutorials/custom-control-on-one-field.md"
       - "ListView - Custom property" : "tutorials/custom-field-on-list.md"
       - "Tilpas kontrolrelation" : "tutorials/custom-control-relation.md"
+      - "Gruppering af felter" : "tutorials/UI/UiDesigner.md"
       - "Filupload" : 
          - "Filupload" : "tutorials/fileupload/index.md"
          - "1 felt (bytes)" : "tutorials/fileupload/1-field.md"
@@ -99,10 +100,10 @@ nav:
    - "Logging" :
       - "Log i applikationen" : "tutorials/Logging/log_application.md"
       - "Brug af NLog" : "tutorials/Logging/nlog.md"
+   - "Bidrag til dokumentationen" : "gettingstarted/contribution.md"
 - "Baggrund" :
     - "Tanken bag" : "guide/need.md"
     - "Visionen" : "guide/intro.md"
     - "Produktet" : "guide/product.md"
     - "Processen" : "guide/process.md"
-- "Bidrag til dokumentationen" : "gettingstarted/contribution.md"
 - "Kontakt" : "contact.md"

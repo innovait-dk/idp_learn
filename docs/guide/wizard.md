@@ -2,6 +2,8 @@
 
 Det tager ikke lang tid at få den først applikation klar.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yoSoRPW3bNQ?si=-KmyoaimZQiN9PsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 IDP'en kommer med en projekt-Wizard i Visual Studio. Vælg "IDP Solution" i "Create new project". Det er muligt at filtre i "Project Types" og vælge "IDP".
 
 ![](media/wizard1.png)
