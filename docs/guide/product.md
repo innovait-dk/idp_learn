@@ -28,13 +28,13 @@ Den genererede kode er designet til at være så fleksibel som muligt. Da koden 
 
 ## Innova Framework
 
-Innova Framework er en kulmination af Innova IT's mange års erfaring, skræddersyet til at komplementere og udvide de mest populære .NET-rammer:
+Innova Framework tilbyder en omfattende samling af udviklingsværktøjer og frameworks designet til at udvide og komplementere populære .NET-frameworks.:
 
-- Entity Framework
-- Fluentvalidation
-- Microsoft.Extensions.Logging
-- Microsoft.Extensions.DependencyInjection
-- Prism
-- Windows UI: WPF
-
-Dette rammeværk er grundlaget for alle Innova IT's applikationer og modtager regelmæssige opdateringer for at sikre, at det forbliver på forkant med branchens bedste praksis.
+- [Entity Framework](https://github.com/dotnet/efcore)
+- [Fluentvalidation](https://docs.fluentvalidation.net/en/latest/)
+- [AutoMapper](https://automapper.org/)
+- [Microsoft.Extensions.Logging](https://learn.microsoft.com/en-us/dotnet/core/extensions/logging?tabs=command-line)
+- [.NET dependency injection](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
+- [Prism](https://prismlibrary.com/docs/)
+- [Telerik](https://www.telerik.com/)
+- [Infragistics](https://www.infragistics.com/)
