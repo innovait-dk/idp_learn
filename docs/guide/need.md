@@ -4,7 +4,7 @@ Forretningsapplikationer er afgørende for at understøtte arbejdsprocesser i en
 
 Uanset om det er et lagersystem eller et kunde- og ordrestyringssystem, forventer brugeren visse kernefunktionaliteter.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BFKg0Fd8UEY?si=Iv2PKZ71PxcDTLgI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J3qw3zO2qzU?si=FrM_mU1G-5X1sSU1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Kernefunktionaliteter
 
