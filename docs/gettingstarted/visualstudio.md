@@ -2,6 +2,8 @@
 
 **Bemærk: Følgende kan kun udføres af kunder hos Innova IT.**
 
+Forudsætninger:
+
 - Have modtaget login til sitet.
 - Der skal installeres 2 VSIX'er leveret af Innova IT.
 - Opret adgang til NuGet-pakker leveret af Innova IT.

@@ -10,19 +10,19 @@
 2. Vælg "Employees"
 3. I "Code Tasks" vælg "Validator" og klik "Add Code".  Der bliver nu genereret en EmployeesValidator.cs fil, som frit kan tilpasses, som vist nedenfor.
 
-I dette tilfælde er partial metoden "AfterAddRules" implementeret.
+I dette tilfælde er partial metoden "AfterInitialize" implementeret.
 
 ```cs
-     public partial class EmployeesValidator
-    {
-        partial void AfterAddRules()
-        {
-            RuleSet(PropertyRulesetName, () =>
-            {
-                RuleFor(ent => ent.BirthDate).LessThan(DateTime.Now.AddYears(-18));
-            });
-        }
-    }
+ public partial class EmployeesValidator
+ {
+     partial void AfterInitialize()
+     {
+         RuleSet(RuleSetNames.PropertyRuleSetName, () =>
+         {
+             RuleFor(ent => ent.BirthDate).LessThan(DateTime.Now.AddYears(-18));
+         });
+     }
+ }
 ```
 
 Det betyder i UI ser det således ud, hvis man indtaster en "forkert" dato.

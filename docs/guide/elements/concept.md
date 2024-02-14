@@ -10,7 +10,7 @@ Innova Developer Platform fungerer gennem en simpel, men effektiv trefaset proce
 
    ![](media/concept-2023-09-01-08-36-41.png)
 
-Den genererede kode præsenteres direkte i Visual Studio's solution explorer. Kodefiler med extension "*.tt.cs" bør ikke ændres, da de vil blive overskrevet ved næste kodegenerering. Takket være partial-klasser, er der mulighed for at bygge videre på den genererede kode ved at tilføje egne metoder.
+Den genererede kode præsenteres direkte i Visual Studio's solution explorer. Kodefiler med extension "*.tt.cs" må ikke ændres, da de vil blive overskrevet ved næste kodegenerering. Takket være partial-klasser, er der mulighed for at bygge videre på den genererede kode ved at tilføje egne metoder.
 
 ![Alt text](media/concept.png)
 

@@ -22,7 +22,7 @@ Nedenfor er vist eksempel på at bruge [NLog](https://nlog-project.org/)
       throwExceptions="true"  autoReload="true"
       internalLogFile="C:\temp\Log\NlogInfo.txt">
   <variable name="logDirectory" value="C:\temp\LogService" />
-  <variable name="applicationname" value="Nortwind" />
+  <variable name="applicationname" value="Northwind" />
 
   <targets>
     <target name="DataLayer" xsi:type="BufferingWrapper" bufferSize="1000" flushTimeout="1000">

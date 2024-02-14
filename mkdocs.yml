@@ -71,14 +71,13 @@ nav:
    - "Entity Framework" : 
       - "Entity" : "tutorials/Entity/Entity.md"
       - "Entity Factory" : "tutorials/Entity/EntityFactory.md"
+      - "Entity Security" : "tutorials/Entity/EntitySecurity.md"
    - "Validation" : 
       - "Basic" : "tutorials/Validation/validation.md"
       - "Andre eksempler" : "tutorials/Validation/custom-validation.md"
-      - "Validering af viewmodel" : "tutorials/Validation/viewmodel-validation.md"
    - "User Interface" :
       - "Mapper - Custom data-Property" : "tutorials/UI/Mapper.md"
       - "Mapper - Custom List-Property" : "tutorials/UI/Mapper-Template.md"
-      - "Detail-Control" : "tutorials/UI/Detail-Control.md"
       - "View - Custom Show" : "tutorials/custom-show-view.md"
       - "Custom-Control på et felt" : "tutorials/custom-control-on-one-field.md"
       - "ListView - Custom property" : "tutorials/custom-field-on-list.md"
@@ -98,7 +97,6 @@ nav:
       - "Søgning" :
          - "Opret hurtigfind" : "tutorials/add-quickfind.md"
          - "Søgning" : "tutorials/search.md"
-         - "Avanceret søgning" : "tutorials/advanced-search.md"
    - "App- og UserSettings" : "tutorials/Settings/settings.md"
    - "Logging" :
       - "Log i applikationen" : "tutorials/Logging/log_application.md"

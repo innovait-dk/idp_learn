@@ -1,39 +1,35 @@
 # Search
 
-Viser "search" i list-templaten for Category, som vist nedenfor.
+Der kan laves to søge-skærmbilleder: Simple og Avanced.
 
- ![image.png](../media/search_0.png)
+**Simple**
 
-Vælg CategoryName og Description og klik "Create Code"
+![Alt text](media/search.png)
 
- ![image.png](../media/search_1.png)
+**Avanced**
 
-Start applikationen. Som default er listen tom og man skal klikke på "Søg" for at få vist listen.
+![Alt text](media/search-1.png)
 
-## ExecuteSearchOnStartup 
+Og de to skærmbilleder kan vises på to forskellige måder: I værktøjslinen eller oven over listen:
 
-Hvis man vil have vist listens indhold, når man kommer ind på listen skal man kode i en partial class til search-viewmodel'en.
 
-```csharp
-public partial class CategoriesSearchViewModel
- {
-     partial void Initialize()
-     {
-         this.ExecuteSearchOnStartup = true;
-     }
- }
-```
+**Værktøjslinen**
 
-## AutoCollapseOnSearch
+![Alt text](media/search-3.png)
 
-Hvis man ønsker at søgepanelet automatisk skal kollapses når man foretager en søgning, kan dette gøres ved at indsætte følgende kode i partial klassen til SearchViewModel'en.
+**Oven over listen**
 
-```csharp
-public partial class OrdersSearchViewModel
-{
-   partial void Initialize()
-   {
-      this.AutoCollapseOnSearch = true;
-   }
-}
-```
+![Alt text](media/search-2.png)
+
+I designeren vælges "User interface" og entiteten der skal laves søge-skærmbillede for.
+
+Der vælges hvilke felter der skal være søgebare, som vist nedenfor.
+
+![Alt text](media/search-4.png)
+
+Dernæst vælges fanebladet "Search" og i visual studio property-vinduet vælges konfigurationen for søge-skærmbilledet.
+
+![Alt text](media/search-5.png)
+
+Herefter klikkes på "Create code".
+

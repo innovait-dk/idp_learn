@@ -5,7 +5,7 @@
 
 ## Innova Application Designer
 
-Innova Application Designer (IAD) er et udviklingsværktøj, der integrerer med Microsoft Visual Studio. Med IAD kan udviklere let konfigurere de forskellige lag i applikationsarkitekturen. Efter den nødvendige konfiguration kan kode autogenereres direkte i Visual Studio, hvilket bidrager til en mere strømlinet og effektiv udviklingsproces.
+Innova Application Designer (IAD) er et udviklingsværktøj, der integrerer med Microsoft Visual Studio. Med IAD kan udviklere let konfigurere de forskellige lag i applikationsarkitekturen. Efter den nødvendige konfiguration kan kode genereres direkte i Visual Studio, hvilket bidrager til en mere strømlinet og effektiv udviklingsproces.
 
 Med IAD får udviklere mulighed for visuelt at udforske og definere hvilke arkitekturelementer de ønsker at inkludere i deres applikation, og justere dem efter behov. Når et arkitekturelement er valgt, som f.eks. "Entity Framework", kan udviklere specificere, hvilke databasetabeller der skal inkluderes i applikationens entitetslag.
 
@@ -15,7 +15,7 @@ Med IAD får udviklere mulighed for visuelt at udforske og definere hvilke arkit
 
 Den yderste venstre kolonne af IAD viser de valgte arkitekturelementer. Efter valg af et specifikt arkitekturelement, kan man konfigurere og tilpasse arkitekturelementet. 
 
-Som eksemplificeret, ved valg af "Entity Framework" bliver det muligt at specificere hvilke databasetabeller, der skal integreres i applikationens entitetslag. Efter fuldførelse af konfigurationen klikkes på "Create code"-knappen, som autogenere C# kode for hele entitetslaget. Denne kode kan derefter ses, og om nødvendigt tilpasses, via solution explorer.
+Som eksemplificeret, ved valg af "Entity Framework" bliver det muligt at specificere hvilke databasetabeller, der skal integreres i applikationens entitetslag. Efter fuldførelse af konfigurationen klikkes på "Create code"-knappen, som genere C# kode for hele entitetslaget. Denne kode kan derefter ses, og om nødvendigt tilpasses, via solution explorer.
 
 Hvert arkitekturelement bruger metadata fra underliggende elementer og automatisere konfigurationen, hvilket letter konfigurationsprocessen.
 

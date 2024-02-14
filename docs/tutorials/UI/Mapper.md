@@ -4,11 +4,11 @@ For eksempel, for dataentiteten "Employees", er der klasserne "EmployeesList" og
 
 Model-klasserne indeholder de properties, der er valgt i Designeren:
 
-![Alt text](media/Mapper-3.png)
+![Alt text](media/Mapper.png)
 
 Den ovenstående konfiguration resulterer i følgende klasser:
 
-![Alt text](media/Mapper-2.png)
+![Alt text](media/Mapper-1.png)
 
 Selv mappingen er kodegenereret i filen "AutoMapperUIProfiles.tt.cs", som vist nedenfor:
 
@@ -47,7 +47,7 @@ I et andet eksempel på tilpasning [Entity](../Entity/Entity.md) skal den custom
 1. Vælg "User Interface"
 2. Vælg "Employees"
 3. Skift til fanebladet "List"
-4. I "Code Tasks" vælg "Mapper" og klik "Add Code". Der vil nu blive genereret en fil ved navn "EmployeesListMapperProfile.cs".
+4. I "Code Tasks" vælg "MapperProfile" og klik "Add Code". Der vil nu blive genereret en fil ved navn "EmployeesListMapperProfile.cs".
 5. Implementer den partielle metode "AfterConfiguration" og foretag mappingen, som vist nedenfor.
 
 ```csharp

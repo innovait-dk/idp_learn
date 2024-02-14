@@ -56,13 +56,13 @@ For at ændre dette, vælg "Entity Framework" og klik derefter på entiteten "Ca
 
 "DefaultTostringFieldname" er som standard sat til CategoryName. 
 
-![Alt text](media/entityframework-2.png)
+![Alt text](media/entityframework.png)
 
 Dette kan ændres ved at vælge et andet felt fra dropdown-menuen. 
 
 ### Tilpasning af sortering
 
-Der er allerede sat en standard for, hvilket felt der skal sorteres efter (det første tekstfelt) samt sorteringens retning (ascendende eller descendende). Dette kan ændres ved at vælge et andet felt fra dropdown-listen.
+Der er allerede sat en standard for, hvilket felt der skal sorteres efter (det første tekstfelt) samt sorteringens retning (Ascending eller Descending). Dette kan ændres ved at vælge et andet felt fra dropdown-listen.
 
 ### Implementering af cache
 
@@ -85,7 +85,9 @@ For at implementere "Aktiv"-funktionaliteten på Shippers, markér "Aktiv" for S
 
 Efter at have kørt SQL-filen på databasen, vil du bemærke, at ActiveFromDate som standard er sat til dagens dato.
 
-For at opdatere entitetsmodellen, klik på "Refresh EntityModel" i designervinduet og tryk derefter på "Create code". Kør derefter din applikation, vælg ordrelisten og klik på "Tilføj". "ShipVia"-feltet vil indeholde en dropdown-liste med alle tre leverandører:
+For at opdatere entitetsmodellen, åben og luk designeren. Hver gang desigeren åbnes vil den hente de nyeste meta-data fra SQL Databasen og eventuel ændringer vil vises i designer.
+
+Tryk derefter på "Create code". Kør derefter din applikation, vælg ordrelisten og klik på "Tilføj". "ShipVia"-feltet vil indeholde en dropdown-liste med alle tre leverandører:
 
 ![](../media/sqltoentity_8.png)
 
