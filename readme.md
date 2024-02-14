@@ -9,7 +9,7 @@ If you want to serve/build locally:
 
 1. Install Python (with pip) https://www.python.org/downloads/windows/
 
-2. Install "Material for MkDocs": https://squidfunk.github.io/mkdocs-material/getting-started/
+2. Install Requirements: "#pip install -r requirements.txt"
 
 ## Syntax reference
 
