@@ -4,7 +4,8 @@
 
 Forudsætninger:
 
-- Have modtaget login til sitet.
+- Have en Microsoft Account - [Opret her](https://account.microsoft.com/account/manage-my-account)
+- Have modtaget velkomst mail fra Azure devops fra Innova IT.
 - Der skal installeres 2 VSIX'er leveret af Innova IT.
 - Opret adgang til NuGet-pakker leveret af Innova IT.
 
