@@ -102,6 +102,7 @@ nav:
       - "Log i applikationen" : "tutorials/Logging/log_application.md"
       - "Brug af NLog" : "tutorials/Logging/nlog.md"
    - "Bidrag til dokumentationen" : "gettingstarted/contribution.md"
+   - "Andre frameworks" : "gettingstarted/otherframeworks.md"
 - "Baggrund" :
     - "Tanken bag" : "guide/need.md"
     - "Visionen" : "guide/intro.md"
