@@ -14,20 +14,9 @@ Som det fremgår herunder, er alle tabeller valgt:
 
 Efter konfigurationen skal koden genereres. Klik på "Create Code" knappen placeret yderst til venstre:
 
-![](../media/sqltoentity_2.png)
+Nu har applikationen et fuldt operationelt datalag, og du kan eksempelvis starte med at opdatere data i databasen. Resten af konfigurationsindstillingerne vil blive dækket senere, men du kan allerede nu tilføje yderligere arkitekturelementer til din applikation.
 
-Efter dette trin indeholder Visual Studio nu et nyt bibliotek kaldet "Entity", som inkluderer følgende filer:
-
-![](../media/sqltoentity_3.png)
-
-Blandt disse filer finder du kode for:
-
-- Entity Framework (code first): Context.tt.cs og Entities.tt.cs
-- Unit Of Work: UnitOfWork.tt.cs
-
-På dette tidspunkt har din applikation et fuldt operationelt datalag, og du kan eksempelvis starte med at opdatere data i databasen. Resten af konfigurationsindstillingerne vil blive dækket senere, men du kan allerede nu tilføje yderligere arkitekturelementer til din applikation.
-
-Hvis datamodellen ændres i SQL databasen, så vil ændringen afspejles automatisk i designeren næste gang den åbnes. Derefter er det bare at klik "Create Code" og så er den nye datamodel kodegenereret.
+Hvis datamodellen ændres i SQL databasen, så vil ændringen afspejles automatisk i designeren næste gang den åbnes. Derefter er det bare at klik "Create Code" og så er det nye datalag kodegenereret.
 
 ## Konfiguration
 

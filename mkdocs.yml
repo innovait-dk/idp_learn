@@ -72,6 +72,7 @@ nav:
       - "Entity" : "tutorials/Entity/Entity.md"
       - "Entity Factory" : "tutorials/Entity/EntityFactory.md"
       - "Entity Security" : "tutorials/Entity/EntitySecurity.md"
+      - "QueryModifier" : "tutorials/Entity/querymodifier.md"
    - "Validation" : 
       - "Basic" : "tutorials/Validation/validation.md"
       - "Andre eksempler" : "tutorials/Validation/custom-validation.md"
