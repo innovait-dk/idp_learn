@@ -1,4 +1,4 @@
-Innova Developer Platform udvider og komplementere populære .NET-frameworks.:
+Innova Developer Platform extends and complements popular .NET frameworks:
 
 - [Entity Framework](https://github.com/dotnet/efcore)
 - [Fluentvalidation](https://docs.fluentvalidation.net/en/latest/)

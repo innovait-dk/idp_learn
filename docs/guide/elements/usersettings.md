@@ -1,13 +1,11 @@
 # UserSettings
 
-Formålet med usersettings er at gemme settings på samme måde, som appsettings. 
+The purpose of UserSettings is to store settings in the same way as AppSettings.
 
-Dog er usersettings bruger-specifikke. Det betyder at man kan bruge usersettings til at f.eks. at gemme parameter som er unikke for den enkelte bruger.
+However, UserSettings are user-specific. This means that you can use UserSettings to, for example, save parameters that are unique to each individual user.
 
-Selve tabellen ser således. 
+The table itself looks like this:
 
 ![usersettings](media/appsettings_2021-04-06-14-20-30.png)
 
-Ellers er brugen og det kodegeneret det samme som appsettings.
-
-
+Otherwise, the usage and the generated code are the same as AppSettings.

@@ -1,16 +1,16 @@
-# Andre-konfigurationer
+# Other Configurations
 
-Der er andre konfigurationsmuligheder for file upload:
+There are other configuration options for file upload:
 
  ![image.png](../../media/andre-konfigurationer_0.png)
 
-**Diaglogfilter** - her kan man vælge et foruddefineret filter eller skrive et selv. Det filter bliver sat på OpenFileDialog og dermed kan man begrænse hvilke filtyper, der kan uploads.
+**DialogFilter** - here you can choose a predefined filter or write one yourself. This filter is set on OpenFileDialog and thus you can limit which file types can be uploaded.
  ![image.png](../../media/andre-konfigurationer_1.png)
 
-**FileSizeField** - Hvis man vil gemme filestørrelsen i databasen kan man oprette et felt i databasen og vælge feltet her. Feltet vil blive automatisk opdateret ved upload af en fil.
+**FileSizeField** - If you want to save the file size in the database, you can create a field in the database and select the field here. The field will be automatically updated when uploading a file.
 
-**ImageMaxHeight** - den maksimale højde for billedet, når det vises i viewet.
+**ImageMaxHeight** - the maximum height of the image when it is displayed in the view.
 
-**ImageMaxWidth** - den maksimale bredde for billedet, når det vises i viewet.
+**ImageMaxWidth** - the maximum width of the image when it is displayed in the view.
 
-**MaxFileSize** - Her kan man lægge en begrænsning på hvor store filerne må være. Værdien er i MB.
+**MaxFileSize** - Here you can set a limit on how large the files may be. The value is in MB.

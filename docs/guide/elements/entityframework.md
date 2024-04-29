@@ -1,91 +1,91 @@
 # Entity Framework
 
-"Entity Framework"-elementet bruges primært til at udvælge, hvilke tabeller og views fra SQL databasen du ønsker at inkorporere i din applikation.
+The "Entity Framework" element is primarily used to select which tables and views from the SQL database you want to incorporate into your application.
 
-Efter tilføjelsen af dette arkitekturelement præsenteres du for nedenstående konfigurationsskærm:
+After adding this architectural element, you are presented with the following configuration screen:
 
 ![Alt text](media/entityframework-1.png)
 
-Skærmbilledet viser en liste over alle tabeller og views i databasen. Markér de ønskede tabeller/views ved at klikke på afkrydsningsboksene ved siden af dem. For at vælge alle tabeller under "Tables", markér blot denne.
+The screen shows a list of all tables and views in the database. Mark the desired tables/views by clicking on the checkboxes next to them. To select all tables under "Tables", simply mark this.
 
-Som det fremgår herunder, er alle tabeller valgt:
+As shown below, all tables are selected:
 
 ![](../media/sqltoentity_1.png)
 
-Efter konfigurationen skal koden genereres. Klik på "Create Code" knappen placeret yderst til venstre:
+After configuration, the code needs to be generated. Click on the "Create Code" button located farthest to the left:
 
-Nu har applikationen et fuldt operationelt datalag, og du kan eksempelvis starte med at opdatere data i databasen. Resten af konfigurationsindstillingerne vil blive dækket senere, men du kan allerede nu tilføje yderligere arkitekturelementer til din applikation.
+Now the application has a fully operational data layer, and you can, for example, start updating data in the database. The rest of the configuration settings will be covered later, but you can already add additional architectural elements to your application.
 
-Hvis datamodellen ændres i SQL databasen, så vil ændringen afspejles automatisk i designeren næste gang den åbnes. Derefter er det bare at klik "Create Code" og så er det nye datalag kodegenereret.
+If the data model changes in the SQL database, the change will automatically be reflected in the designer the next time it is opened. Then it's just to click "Create Code" and the new data layer is code generated.
 
-## Konfiguration
+## Configuration
 
-I "Entity Framework" konfigurationen vil følgende indstillinger blive automatisk fastsat:
+In the "Entity Framework" configuration, the following settings will be automatically set:
 
-- Entitetsnavn (standard er tabelnavnet)
-- Entitetsattributnavne (standardnavnene på tabelens felter)
-- Standard ToString metode for entiteten
-- Standard sortering for lister
-- Implementering af caching
-- Implementering af "Aktiv" status
+- Entity name (default is the table name)
+- Entity attribute names (default names of the table fields)
+- Default ToString method for the entity
+- Default sorting for lists
+- Implementation of caching
+- Implementation of "Active" status
 
-### Tilpasning af entitetsnavne
+### Customization of entity names
 
-I designvinduet kan du ændre navnet på en entitet i den højre kolonne, hvis du for eksempel ikke ønsker, at visse attributter skal bære databasens felt navn. Dette kan gøres i "CodeName" kolonnen:
+In the design window, you can change the name of an entity in the right column if you, for example, do not want certain attributes to bear the database field name. This can be done in the "CodeName" column:
 
 ![](../media/sqltoentity_4.png)
 
-### Tilpasning af standard ToString
+### Customization of default ToString
 
-Som en generel regel bliver det første tekstfelt i entiteten benyttet som ToString for denne entitet.
+As a general rule, the first text field in the entity is used as ToString for this entity.
 
-For at ændre dette, vælg "Entity Framework" og klik derefter på entiteten "Categories". Nu burde konfigurationsindstillingerne for "Categories" blive vist i egenskabsvinduet i Visual Studio.
+To change this, select "Entity Framework" and then click on the entity "Categories". Now the configuration settings for "Categories" should be displayed in the property window in Visual Studio.
 
 ![](../media/sqltoentity_5.png)
 
-"DefaultTostringFieldname" er som standard sat til CategoryName. 
+"DefaultTostringFieldname" is by default set to CategoryName. 
 
 ![Alt text](media/entityframework.png)
 
-Dette kan ændres ved at vælge et andet felt fra dropdown-menuen. 
+This can be changed by selecting another field from the dropdown menu. 
 
-### Tilpasning af sortering
+### Customization of sorting
 
-Der er allerede sat en standard for, hvilket felt der skal sorteres efter (det første tekstfelt) samt sorteringens retning (Ascending eller Descending). Dette kan ændres ved at vælge et andet felt fra dropdown-listen.
+A default has already been set for which field to sort by (the first text field) and the direction of sorting (Ascending or Descending). This can be changed by selecting another field from the dropdown list.
 
-### Implementering af cache
+### Implementation of cache
 
-Caching anvendes typisk på i tabeller, hvor data sjældent ændres. Dette er typisk relevant for opslags-/værdi-/lookup-tabeller. Ved at aktivere caching for en entitet vil data blive hentet fra SQL databasen den første gang, mens alle efterfølgende forespørgsler vil trække data fra applikationens lokale cache. Cacheindholdet vil blive slettet ved applikationsafslutning, så ved næste opstart hentes data først fra databasen og derefter fra cachen.
+Caching is typically used in tables where data rarely changes. This is typically relevant for lookup/value tables. By enabling caching for an entity, data will be fetched from the SQL database the first time, while all subsequent requests will pull data from the application's local cache. The cache content will be deleted at application termination, so at the next startup, data is first fetched from the database and then from the cache.
 
-Du kan konfigurere caching enten fra egenskabsvinduet for den specifikke entitet eller direkte i designervinduet. Herunder er caching aktiveret for Region, Suppliers og Territories:
+You can configure caching either from the property window for the specific entity or directly in the designer window. Below, caching is enabled for Region, Suppliers, and Territories:
 
 ![](../media/sqltoentity_7.png)
 
-### Implementering af "Aktiv"
+### Implementation of "Active"
 
-"Aktiv"-funktionen anvendes ofte for opslags- eller lookuptabeller for at styre, hvornår en bestemt række i tabellen er aktiv og derfor bør vises i applikationen. For at illustrere dette, lad os tage et eksempel:
+The "Active" function is often used for lookup tables to control when a particular row in the table is active and therefore should be displayed in the application. To illustrate this, let's take an example:
 
-Antag, at entiteten/tabellen "Shippers" indeholder leverandører, der kan håndtere individuelle ordrer. Med tiden kan det blive nødvendigt at udskifte leverandører. Men det er vigtigt stadig at kunne identificere, hvilken leverandør der håndterede en tidligere ordre. Derfor, når en ny ordre oprettes, bør dropdown-menuen for leverandører kun vise de "aktive" leverandører. Men for ældre ordrer bør "inaktive" leverandører stadig være synlige.
+Suppose the entity/table "Shippers" contains suppliers who can handle individual orders. Over time, it may become necessary to replace suppliers. But it is important still to be able to identify which supplier handled a previous order. Therefore, when a new order is created, the dropdown menu for suppliers should only show the "active" suppliers. But for older orders, "inactive" suppliers should still be visible.
 
-For at implementere "Aktiv"-funktionaliteten på Shippers, markér "Aktiv" for Shippers og klik derefter på "Create Code". Dette vil generere en SQL-fil, der tilføjer to nye felter til Shippers-tabellen:
+To implement the "Active" functionality on Shippers, mark "Active" for Shippers and then click on "Create Code". This will generate a SQL file that adds two new fields to the Shippers table:
 
-- ActiveFromDate: angiver fra hvilken dato rækken er aktiv
-- ActiveToDate: angiver til hvilken dato rækken er aktiv
+- ActiveFromDate: indicates from which date the row is active
+- ActiveToDate: indicates to which date the row is active
 
-Efter at have kørt SQL-filen på databasen, vil du bemærke, at ActiveFromDate som standard er sat til dagens dato.
+After running the SQL file on the database, you will notice that ActiveFromDate is by default set to today's date.
 
-For at opdatere entitetsmodellen, åben og luk designeren. Hver gang desigeren åbnes vil den hente de nyeste meta-data fra SQL Databasen og eventuel ændringer vil vises i designer.
+To update the entity model, open and close the designer. Each time the designer is opened, it will fetch the latest metadata from the SQL Database and any changes will be displayed in the designer.
 
-Tryk derefter på "Create code". Kør derefter din applikation, vælg ordrelisten og klik på "Tilføj". "ShipVia"-feltet vil indeholde en dropdown-liste med alle tre leverandører:
+Then press "Create code". Then run your application, select the order list and click on "Add". The "ShipVia" field will contain a dropdown list with all three suppliers:
 
 ![](../media/sqltoentity_8.png)
 
-Men hvis der er angivet en værdi i ActiveToDate:
+But if a value is specified in ActiveToDate:
 
 ![](../media/sqltoentity_9.png)
 
-Vil dropdown-listen ikke vise "ShipVia" for denne leverandør:
+The dropdown list will not show "ShipVia" for this supplier:
 
 ![](../media/sqltoentity_10.png)
 
-Dette giver en let måde at administrere opslagstabeller på ved hjælp af "Entity Framework" konfigurationen.
+This provides an easy way to manage lookup tables using the "Entity Framework" configuration.

@@ -1,38 +1,37 @@
-# Første applikation
+# First Application
 
-Det tager ikke lang tid at få den først applikation klar.
+It doesn't take long to get the first application ready.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yoSoRPW3bNQ?si=-KmyoaimZQiN9PsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-IDP'en kommer med en projekt-Wizard i Visual Studio. Vælg "IDP Solution" i "Create new project". Det er muligt at filtre i "Project Types" og vælge "IDP".
+The IDP comes with a project wizard in Visual Studio. Choose "IDP Solution" in "Create new project". It's possible to filter in "Project Types" and choose "IDP".
 
 ![](media/wizard1.png)
 
-Klik Next. Udfyld navnet og klik Create.
+Click Next. Fill in the name and click Create.
 
 ![](media/wizard2.png)
 
-Wizarden laver en solution med 2 projekter:
+The wizard creates a solution with 2 projects:
 
 - *Applicationname*.Client
 - *Applicationname*.Data
 
 ![](media/wizard3.png)
 
-I data-projektet er der tilføjet en IAD-fil, som indeholder konfigurationen.
-Denne bliver åbnet automatisk og viser 3 mulige applikationstyper:
+In the data project, an IAD file has been added, which contains the configuration.
+This is automatically opened and shows 3 possible application types:
 
 ![](media/wizard4.png)
 
-Vælg "Wpf - Telerik" og klik ok.
+Choose "Wpf - Telerik" and click ok.
 
-Indtast SQL Server navn og vælg database og klik ok.
+Enter SQL Server name and choose database and click ok.
 
 ![](media/wizard5.png)
 
-
-Kør projektet. Det er nu muligt at navigere mellem tabeller/entitetter, redigere, indsæt og slette data.
+Run the project. It is now possible to navigate between tables/entities, edit, insert, and delete data.
 
 ![](media/wizard6.png)
 
-Næste skridt er at tilpasse applikationen med f.eks. navigeringsknapper, tilpasning af brugergrænseflade m.m.
+The next step is to customize the application with, for example, navigation buttons, user interface adjustments, etc.

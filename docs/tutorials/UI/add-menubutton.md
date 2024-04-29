@@ -1,18 +1,18 @@
-**Krav**: I show-viewet for Categories skal der være en knap i menuen, som skal vise en dialogboks, når man klikker på knappen
+**Requirement**: In the show-view for Categories, there should be a button in the menu, which should display a dialog box when the button is clicked
 
-**Opgave**: Opret en Menu og registere den på menuservice for CategoriesShow (CategoriesShowMenuService)
+**Task**: Create a Menu and register it on the menuservice for CategoriesShow (CategoriesShowMenuService)
 
-**Udførelse**: 
+**Execution**: 
 
-1. Vælg "User Interface".
-2. Vælg "Categories".
-3. Vælg fanebladet Show.
-4. Under "Code Tasks" vælges "MenuItem", indtast et Navn som menu-klassen skal have og klikke på "Add Code". 
-Der vil nu blive genereret en fil ved navn CategoriesShowMenu.cs, som kan tilpasses som ønsket, som det er illustreret nedenfor.
+1. Select "User Interface".
+2. Select "Categories".
+3. Select the Show tab.
+4. Under "Code Tasks" select "MenuItem", enter a Name for the menu class and click on "Add Code". 
+A file named CategoriesShowMenu.cs will now be generated, which can be customized as desired, as illustrated below.
 
 ```cs
- //TODO: Set the property "GroupName"" in the construtor and register the menu in the menuservice.
-//To show the menu when the view is active, add this in the partial methode 'Initialize' in the showmenuservice: 
+ //TODO: Set the property "GroupName"" in the constructor and register the menu in the menuservice.
+//To show the menu when the view is active, add this in the partial method 'Initialize' in the showmenuservice: 
 //this.AddMenu<Menus.CategoriesShowDialogMenu>();
 
 public class CategoriesShowDialogMenu:MenuModelEntity<Northwind.Data.Entity.CategoriesShow>
@@ -41,8 +41,8 @@ public class CategoriesShowDialogMenu:MenuModelEntity<Northwind.Data.Entity.Cate
 }
 ```
 
-I ovenstående er windowsDialogService injected og bliver brugt ved executeCommand'en.
+In the above, windowsDialogService is injected and is used in the executeCommand.
 
-Show-view ser nu således ud
+The show-view now looks like this
 
 ![Alt text](media/add-menubutton.png)

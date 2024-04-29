@@ -7,9 +7,6 @@ markdown_extensions:
    - meta
    - admonition
    - attr_list
-   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
    - md_in_html
    - toc:
       permalink: true
@@ -26,10 +23,9 @@ plugins:
    #- unused_files
   # - htmlproofer
 
-
 theme:
    name: material
-   language: da
+   language: en
    features:
       - navigation.tabs
       - navigation.footer
@@ -43,15 +39,15 @@ theme:
       code: Roboto Mono
      
 nav:
-- "Forside" : "index.md"
-- "Kom i gang" : 
-   - "Opsætning af Visual Studio" : "gettingstarted/visualstudio.md"
-   - "Første applikation" : "guide/wizard.md"
+- "Home" : "index.md"
+- "Get Started" : 
+   - "Setting up Visual Studio" : "gettingstarted/visualstudio.md"
+   - "First application" : "guide/wizard.md"
 - "Designer" : 
-   - "Introduktion til designer" : "guide/elements/designer.md"
-   - "Processen" : "guide/elements/concept.md"
-   - "Oversigt arkitektur elementer" : "guide/elements/elements-overview.md"
-- "Arkitektur elementer" : 
+   - "Introduction to designer" : "guide/elements/designer.md"
+   - "The process" : "guide/elements/concept.md"
+   - "Overview of architecture elements" : "guide/elements/elements-overview.md"
+- "Architecture elements" : 
    - "Database" : "guide/elements/database.md"
    - "Entity Framework" : "guide/elements/entityframework.md"
    - "Validation" : "guide/elements/validation.md"
@@ -64,7 +60,7 @@ nav:
    - "Security" : "guide/elements/security.md"
    
 - "How-To-Guides" : 
-   - "Sådan tilpasses" :
+   - "How to customize" :
       - "Partial classes" : "tutorials/index.md"
       - "Code Tasks - Configuration" : "tutorials/CodeTasksConfiguration.md"
       - "Code Tasks - Customization" : "tutorials/CodeTasksCustomization.md"
@@ -75,39 +71,39 @@ nav:
       - "QueryModifier" : "tutorials/Entity/querymodifier.md"
    - "Validation" : 
       - "Basic" : "tutorials/Validation/validation.md"
-      - "Andre eksempler" : "tutorials/Validation/custom-validation.md"
+      - "Other examples" : "tutorials/Validation/custom-validation.md"
    - "User Interface" :
       - "Mapper - Custom data-Property" : "tutorials/UI/Mapper.md"
       - "Mapper - Custom List-Property" : "tutorials/UI/Mapper-Template.md"
       - "View - Custom Show" : "tutorials/custom-show-view.md"
-      - "Custom-Control på et felt" : "tutorials/custom-control-on-one-field.md"
+      - "Custom-Control on a field" : "tutorials/custom-control-on-one-field.md"
       - "ListView - Custom property" : "tutorials/custom-field-on-list.md"
-      - "Tilpas kontrolrelation" : "tutorials/custom-control-relation.md"
-      - "Gruppering af felter" : "tutorials/UI/UiDesigner.md"
-      - "Filupload" : 
-         - "Filupload" : "tutorials/fileupload/index.md"
-         - "1 felt (bytes)" : "tutorials/fileupload/1-field.md"
-         - "2 felter (bytes og filnavn)" : "tutorials/fileupload/2-fields.md"
-         - "3 felter (bytes, filnavn og miniaturebillede)" : "tutorials/fileupload/3-fields.md"
-         - "Andre konfigurationer" : "tutorials/fileupload/other-configurations.md"
-      - "Dropdown med 'tilføj-ny' funktionalitet" : "tutorials/dropdown-with-add.md"
-      - "Tilpas indsættelses- og opdateringslogik" : "tutorials/Custom-insert-og-update-logic.md"
+      - "Customize control relation" : "tutorials/custom-control-relation.md"
+      - "Grouping of fields" : "tutorials/UI/UiDesigner.md"
+      - "File upload" : 
+         - "File upload" : "tutorials/fileupload/index.md"
+         - "1 field (bytes)" : "tutorials/fileupload/1-field.md"
+         - "2 fields (bytes and filename)" : "tutorials/fileupload/2-fields.md"
+         - "3 fields (bytes, filename and thumbnail)" : "tutorials/fileupload/3-fields.md"
+         - "Other configurations" : "tutorials/fileupload/other-configurations.md"
+      - "Dropdown with 'add-new' functionality" : "tutorials/dropdown-with-add.md"
+      - "Customize insert and update logic" : "tutorials/Custom-insert-og-update-logic.md"
       - "Menu" :
-         - "Tilføje Menu" : "tutorials/UI/add-menubutton.md"
+         - "Add Menu" : "tutorials/UI/add-menubutton.md"
          - "MenuService" : "tutorials/UI/menuservice.md"
-      - "Søgning" :
-         - "Opret hurtigfind" : "tutorials/add-quickfind.md"
-         - "Søgning" : "tutorials/search.md"
-   - "App- og UserSettings" : "tutorials/Settings/settings.md"
+      - "Search" :
+         - "Create quickfind" : "tutorials/add-quickfind.md"
+         - "Search" : "tutorials/search.md"
+   - "App and UserSettings" : "tutorials/Settings/settings.md"
    - "Logging" :
-      - "Log i applikationen" : "tutorials/Logging/log_application.md"
-      - "Brug af NLog" : "tutorials/Logging/nlog.md"
-   - "Bidrag til dokumentationen" : "gettingstarted/contribution.md"
-   - "Andre frameworks" : "gettingstarted/otherframeworks.md"
-- "Baggrund" :
-    - "Tanken bag" : "guide/need.md"
-    - "Visionen" : "guide/intro.md"
-    - "Produktet" : "guide/product.md"
-    - "Processen" : "guide/process.md"
-    - "Videoer" : "guide/playlist.md"
-- "Kontakt" : "contact.md"
+      - "Log in the application" : "tutorials/Logging/log_application.md"
+      - "Use of NLog" : "tutorials/Logging/nlog.md"
+   - "Contribute to the documentation" : "gettingstarted/contribution.md"
+   - "Other frameworks" : "gettingstarted/otherframeworks.md"
+- "Background" :
+    - "The idea behind" : "guide/need.md"
+    - "The vision" : "guide/intro.md"
+    - "The product" : "guide/product.md"
+    - "The process" : "guide/process.md"
+    - "Videos" : "guide/playlist.md"
+- "Contact" : "contact.md"

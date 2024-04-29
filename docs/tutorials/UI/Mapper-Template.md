@@ -1,24 +1,24 @@
-Fra tidligere eksempel [Mapper](Mapper.md) er der oprettet en custom property på data-entiteten og så er den property brugt rundt omkring i hele applikationen.
+From the previous example [Mapper](Mapper.md), a custom property was created on the data entity and then that property was used throughout the application.
 
-Det kan være at der kun er behov for at lave en custom-property for et view og det ikke ønskes at lave property'en på data-entiteten, men kun model-entiteten.
+It may be that there is only a need to create a custom property for a view and it is not desired to create the property on the data entity, but only the model entity.
 
-**Krav**: På listen over Employees skal der vises hvor mange Employees en Employees har under sig.
+**Requirement**: On the list of Employees, it should be displayed how many Employees an Employee has under them.
 
-**Opgave**: Opret en property på EmployeesList-klassen, der laver en count på ReportTo
+**Task**: Create a property on the EmployeesList class that counts ReportTo
 
-**Udførelse**: 
+**Execution**: 
 
-1. Opret property 'CountReportTo' på EmployeesList
-2. Lav mapping
-3. Tilføj property'en til selve list-kontrollen.
+1. Create property 'CountReportTo' on EmployeesList
+2. Make mapping
+3. Add the property to the list control itself.
 
-## Opret property
+## Create property
 
-1. Vælg "User Interface".
-2. Vælg "Employees".
-3. Vælg fanebladet "List"
-4. Under "Code Tasks" vælges "Entity - Model" og klikke på "Add Code".
-5. Lav en property som nedenfor
+1. Select "User Interface".
+2. Select "Employees".
+3. Select the "List" tab.
+4. Under "Code Tasks" select "Entity - Model" and click on "Add Code".
+5. Create a property as below
 
 ```cs
     public partial class EmployeesList
@@ -28,9 +28,9 @@ Det kan være at der kun er behov for at lave en custom-property for et view og 
     }
 ```
 
-## Lav mapping
+## Make mapping
 
-I "Code Tasks" vælges "Mapper" og nedenstående implementeres (FullName mappingen er fra tidligere eksempel):
+In "Code Tasks" select "Mapper" and implement the following (FullName mapping is from a previous example):
 
 ```cs
     public partial class EmployeesListMapperProfile
@@ -43,9 +43,9 @@ I "Code Tasks" vælges "Mapper" og nedenstående implementeres (FullName mapping
     }
 ```
 
-## Tilføj property'en til listen
+## Add the property to the list
 
-I "Code Tasks" vælges "List-Control" og nedenstående implementeres:
+In "Code Tasks" select "List-Control" and implement the following:
 
 ```cs
     public partial class EmployeesList
@@ -57,6 +57,6 @@ I "Code Tasks" vælges "List-Control" og nedenstående implementeres:
     }
 ```
 
-Herefter ser listen således ud:
+The list now looks like this:
 
 ![Alt text](media/Mapper-Template.png)

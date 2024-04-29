@@ -1,24 +1,24 @@
-# Opsætning af Visual Studio
+# Setting Up Visual Studio
 
-**Bemærk: Følgende kan kun udføres af kunder hos Innova IT.**
+**Note: The following can only be performed by customers of Innova IT.**
 
-Forudsætninger:
+Prerequisites:
 
-- Have en Microsoft Account - [Opret her](https://account.microsoft.com/account/manage-my-account)
-- Have modtaget velkomst mail fra Azure devops fra Innova IT.
-- Der skal installeres 2 VSIX'er leveret af Innova IT.
-- Opret adgang til NuGet-pakker leveret af Innova IT.
+- Have a Microsoft Account - [Create here](https://account.microsoft.com/account/manage-my-account)
+- Have received a welcome email from Azure DevOps from Innova IT.
+- Two VSIX's provided by Innova IT need to be installed.
+- Set up access to NuGet packages provided by Innova IT.
 
-## For at opsætte adgang til NuGet-pakker
+## To set up access to NuGet packages
 
-I Visual Studio åbner du Indstillinger:
+In Visual Studio, open Settings:
 
 1. Tools > Options
-2. Søg efter "nuget"
-3. Klik på "Package sources"
-4. Klik på plussymbolet øverst i højre hjørne
-5. Indtast "Innova IT" i "Name"
-6. Indtast linket, der er leveret af Innova IT, i "Source"
-7. Klik på OK
+2. Search for "nuget"
+3. Click on "Package sources"
+4. Click on the plus symbol in the upper right corner
+5. Enter "Innova IT" in "Name"
+6. Enter the link provided by Innova IT in "Source"
+7. Click on OK
 
-Nu er Visual Studio klar til at hente Innova IT's Nuget-packages.
+Now, Visual Studio is ready to fetch Innova IT's NuGet packages.

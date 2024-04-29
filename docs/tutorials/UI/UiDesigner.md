@@ -1,18 +1,15 @@
-Som standard vises felterne i show/edit/insert-views som en lang liste.
+By default, the fields in show/edit/insert-views are displayed as a long list.
 
 ![Alt text](media/UiDesigner.png)
 
-Med Ui-designeren kan det nemt tilpasses, så felter bliver grupperet og placeret mere logisk.
+With the UI designer, it can be easily customized so that fields are grouped and placed more logically.
 
 ![Alt text](media/UiDesigner-1.png)
 
-Og som edit-view:
+And as an edit-view:
 
 ![Alt text](media/UiDesigner-2.png)
 
-Se hvordan i videoen.
+See how in the video.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-IBD1lKUmGw?si=iMBbYwz_cX6kAFuh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-

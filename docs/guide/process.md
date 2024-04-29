@@ -1,9 +1,9 @@
-# Processen
+# The Process
 
-Med Innova Developer Platform får du en ensartet udviklingsmetodik for alle forretningsapplikationer, hvilket sikrer konsistens i forhold til teknologi, designmønstre osv.
+With the Innova Developer Platform, you get a uniform development methodology for all business applications, ensuring consistency in terms of technology, design patterns, etc.
 
 ![multipleapplications](media/process_2022-05-30-09-43-00.png)
 
-Dette betyder, at hvis du er ansvarlig for, lad os sige, 10 forretningsapplikationer i din organisation, opnår du en homogenitet i udviklingen, som er udfordrende at opnå gennem andre metoder.
+This means that if you are responsible for, let's say, 10 business applications in your organization, you achieve a homogeneity in development that is challenging to achieve through other methods.
 
-Da de specifikke arkitekturelementer kontinuerligt opdateres med nye versioner, for eksempel fra Microsoft, vil selv ældre applikationer modtage disse opdateringer automatisk, næste gang du genererer kode.
+As the specific architectural elements are continuously updated with new versions, for example from Microsoft, even older applications will receive these updates automatically the next time you generate code.

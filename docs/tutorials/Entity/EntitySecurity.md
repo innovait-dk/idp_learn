@@ -1,12 +1,12 @@
-**Krav**: Der må ikke kunne slettes Categories i applikationen.
+**Requirement**: Categories should not be deletable in the application.
 
-**Opgave**: Sæt entitysecurity "CanDelete" til false.
+**Task**: Set entity security "CanDelete" to false.
 
-**Udførelse**: 
+**Execution**: 
 
-1. Vælg "Entity Framework".
-2. Vælg "Categories".
-3. Under "Code Tasks" vælges "Entity Security" og klikke på "Add Code". Der vil nu blive genereret en fil ved navn CategoriesSecurity.cs, som kan tilpasses som ønsket, som det er illustreret nedenfor.
+1. Select "Entity Framework".
+2. Select "Categories".
+3. Under "Code Tasks", choose "Entity Security" and click on "Add Code". A file named CategoriesSecurity.cs will now be generated, which can be customized as desired, as illustrated below.
 
 ```cs
      public partial class CategoriesSecurity
@@ -18,4 +18,4 @@
     }
 ```
 
-Nu vil slet-knappen ikke blive vist i værktøjslinen.
+Now the delete button will not be displayed in the toolbar.

@@ -1,22 +1,22 @@
-# Visionen for Innova Developer Platform
+# Vision for Innova Developer Platform
 
-"Innova Developer Platform" er designet med et fast formål om at forbedre effektiviteten og kvaliteten af softwareudvikling. Vi sigter mod at:
+The "Innova Developer Platform" is designed with a firm purpose to improve the efficiency and quality of software development. We aim to:
 
-- Minimere udviklings- og leveringstid.
-- Sikre den højeste kvalitet ved at reducere fejl.
-- Optimalisere omkostningerne ved softwarelevering.
-- Begrænse opbygningen af teknisk gæld.
-- Forbedre styringen af softwareleverancer.
+- Minimize development and delivery time.
+- Ensure the highest quality by reducing errors.
+- Optimize the costs of software delivery.
+- Limit the build-up of technical debt.
+- Improve the management of software deliveries.
 
-Ved at integrere "Innova Developer Platform" i udviklingsprocessen kan du forvente:
+By integrating the "Innova Developer Platform" into the development process, you can expect:
 
-- Hurtigere introduktion af nye applikationer til markedet.
-- Uforlignelig produktkvalitet.
-- Konsistent styring, der er uafhængig af individuelle bidragydere, sikrende stabilitet i service og support.
-- Effektivisering af udviklingsteams.
-- Forbedret evne til at navigere i markedsdynamikkerne.
-- Øget profitmargin.
-- Uudtømmelig fleksibilitet, der gør det muligt at bryde ind på nye markeder.
-- Udvidede muligheder for at dyrke diverse markedssegmenter, hvilket fører til øgede indtægtsstrømme.
+- Faster introduction of new applications to the market.
+- Unparalleled product quality.
+- Consistent management, independent of individual contributors, ensuring stability in service and support.
+- Streamlining of development teams.
+- Improved ability to navigate market dynamics.
+- Increased profit margin.
+- Exhaustive flexibility, making it possible to break into new markets.
+- Expanded opportunities to cultivate diverse market segments, leading to increased revenue streams.
 
-Gennem to årtier har Innova IT stolt benyttet "Innova Developer Platform" i udviklingen af skræddersyede forretningsapplikationer såvel som branchespecifikke produkter.
+For two decades, Innova IT has proudly used the "Innova Developer Platform" in the development of tailor-made business applications as well as industry-specific products.

@@ -1,15 +1,14 @@
-Innova Framework bruger [Microsoft.Extensions.Logging](https://learn.microsoft.com/en-us/dotnet/core/extensions/logging?tabs=command-line) til at håndtere logging.
+Innova Framework uses [Microsoft.Extensions.Logging](https://learn.microsoft.com/en-us/dotnet/core/extensions/logging?tabs=command-line) for logging.
 
-Dermed kan der bruges diverse 3. parts logging providers til at udføre selve logging (til tekst-filer, database, webservice m.m.). [Se eksempel på providers her.](https://learn.microsoft.com/en-us/dotnet/core/extensions/logging-providers#third-party-logging-providers)
+This allows the use of various 3rd party logging providers to perform the actual logging (to text files, database, web service, etc.). [See examples of providers here.](https://learn.microsoft.com/en-us/dotnet/core/extensions/logging-providers#third-party-logging-providers)
 
-Når der er behov for at logge injects'e ILogger i constructor'en.
+When there is a need to log, inject ILogger in the constructor.
 
-**Krav**: Når der klikkes på knappen i CategoriesShowDialogMenu skal det logges. 
+**Requirement**: When the button in CategoriesShowDialogMenu is clicked, it should be logged.
 
-**Opgave**: Inject ILogger og kald LogInformation i onExecute.
+**Task**: Inject ILogger and call LogInformation in onExecute.
 
-**Udførelse**: 
-
+**Execution**: 
 ```cs
     public class CategoriesShowDialogMenu:MenuModelEntity<Northwind.Data.Entity.CategoriesShow>
     {
@@ -44,9 +43,8 @@ Når der er behov for at logge injects'e ILogger i constructor'en.
         }
     }
 ```
-
-Når der klikkes på knappen bliver det logget:
+    
+When the button is clicked, it is logged:
 
 ![Alt text](media/log_application.png)
-
 

@@ -1,34 +1,33 @@
-# Produktet
+# The Product
 
-"Innova Developer Platform" er en kombination af to værktøjer:
+The "Innova Developer Platform" is a combination of two tools:
 
-- **Innova Application Designer** (En addin til Microsoft Visual Studio)
+- **Innova Application Designer** (An add-in for Microsoft Visual Studio)
 - **Innova Frameworks**
 
 ## Innova Application Designer
 
-Innova Application Designer (IAD) er et  udviklingsværktøj, der er integreret med Microsoft Visual Studio's miljø.
-Med IAD får udviklere muligheden for at nøje konfigurere de forskellige lag i en applikations arkitektur. Efter denne nøje konfiguration bliver det muligt at autogenerere kode direkte i Visual Studio.
+Innova Application Designer (IAD) is a development tool that is integrated with the Microsoft Visual Studio environment. With IAD, developers get the opportunity to carefully configure the different layers in an application's architecture. After this careful configuration, it becomes possible to auto-generate code directly in Visual Studio.
 
-Ved at benytte IAD får udviklere en håndgribelig visuel præsentation af, hvilke arkitekturelementer de ønsker at inkludere i applikationen, som illustreret nedenfor.
+By using IAD, developers get a tangible visual presentation of which architectural elements they want to include in the application, as illustrated below.
 
 ![iad](elements/media/product_2022-05-24-10-00-45.png)
 
-Dette skærmbillede er et øjebliksbillede direkte fra Visual Studio. Bemærk, at "Solution Explorer" er placeret til højre, mens IAD dominerer venstre side. Et enkelt dobbeltklik på filen "ApplicationDesigner.iad" fra "Solution Explorer" åbner IAD-interface.
+This screenshot is a snapshot directly from Visual Studio. Note that the "Solution Explorer" is located to the right, while IAD dominates the left side. A single double-click on the file "ApplicationDesigner.iad" from the "Solution Explorer" opens the IAD interface.
 
-Den yderste venstre kolonne af IAD fremviser de valgte arkitekturelementer. Efter valg af et specifikt arkitekturelement, kan man dykke dybere og tilpasse det. Som eksemplificeret, ved valg af "Entity Framework" bliver det muligt at specificere hvilke databasetabeller, der skal integreres i applikationens entitetslag. Efter fuldførelse af konfigurationen aktiverer et simpelt klik på "Create code"-knappen autogenereringen af C# kode for hele entitetslaget. Denne kode kan derefter ses, og om nødvendigt tilpasses, via solution explorer.
+The far left column of IAD displays the chosen architectural elements. After choosing a specific architectural element, you can dive deeper and customize it. As exemplified, by choosing "Entity Framework", it becomes possible to specify which database tables should be integrated into the application's entity layer. After completing the configuration, a simple click on the "Create code" button activates the auto-generation of C# code for the entire entity layer. This code can then be viewed, and if necessary adjusted, via the solution explorer.
 
-IAD er konstant i vækst; nye arkitekturelementer tilføjes, og eksisterende elementer opdateres, især når nyere teknologiske rammer, såsom Entity Framework/Entity Core/Entity 6.0, bliver tilgængelige.
+IAD is constantly growing; new architectural elements are added, and existing elements are updated, especially when newer technological frameworks, such as Entity Framework/Entity Core/Entity 6.0, become available.
 
-Hvert arkitekturelement indhenter metadata fra underliggende elementer, hvilket letter konfigurationsprocessen.
+Each architectural element retrieves metadata from underlying elements, which facilitates the configuration process.
 
-### Tilpasning af den genererede kode
+### Customization of the generated code
 
-Den genererede kode er designet til at være så fleksibel som muligt. Da koden genereres som "partial class", kan udviklere nemt skræddersy koden til en specifik applikations behov. Yderligere vejledning kan findes i vores How-To-Guides.
+The generated code is designed to be as flexible as possible. Since the code is generated as a "partial class", developers can easily tailor the code to a specific application's needs. Further guidance can be found in our How-To Guides.
 
 ## Innova Framework
 
-Innova Framework tilbyder en omfattende samling af udviklingsværktøjer og frameworks designet til at udvide og komplementere populære .NET-frameworks.:
+Innova Framework offers a comprehensive collection of development tools and frameworks designed to extend and complement popular .NET frameworks.:
 
 - [Entity Framework](https://github.com/dotnet/efcore)
 - [Fluentvalidation](https://docs.fluentvalidation.net/en/latest/)

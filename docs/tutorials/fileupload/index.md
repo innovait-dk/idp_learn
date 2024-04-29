@@ -1,21 +1,21 @@
 # File Upload
 
-På byte/image felter i databasen er det i UI'en muligt at lave en fil-upload-control og visning af fil/billede.
+In the UI, it is possible to create a file upload control and display a file/image for byte/image fields in the database.
 
-De nedenstående eksempler er lavet på Northwind's Category, som har et felt "Picture" varbinary(max).
+The examples below are made on Northwind's Category, which has a field "Picture" varbinary(max).
 
-Properties der er af typen "byte[]" får i "User Interface" som default sat showcontrol til "Image - Show" og updatecontrol til "Image - Editor".
+Properties of type "byte[]" get by default in the "User Interface" set the show control to "Image - Show" and the update control to "Image - Editor".
 
-Disse kan konfigureres til at understøtte diverse scenarier. 
+These can be configured to support various scenarios.
 
-Som standard kan alle fil-typer uploades.
+By default, all file types can be uploaded.
 
 ## How to
 
-[File Upload - Et felt (bytes)](1-field.md)
+[File Upload - One field (bytes)](1-field.md)
 
-[File upload - To felter (bytes og filename) - redigere filer](2-fields.md)
+[File upload - Two fields (bytes and filename) - edit files](2-fields.md)
 
-[File upload - 3 felter (bytes, filename og thumbnail)](3-fields.md)
+[File upload - 3 fields (bytes, filename, and thumbnail)](3-fields.md)
 
-[File upload - Andre konfigurationer](other-configurations.md)
+[File upload - Other configurations](other-configurations.md)

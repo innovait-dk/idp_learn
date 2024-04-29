@@ -1,15 +1,15 @@
-QueryModifier bruges til at sætte et "globalt" filter på IQueryable når EntityServicen henter data fra databasen.
-QueryModifier'en bliver brugt i alle metoder på EntityServicen.
+QueryModifier is used to set a "global" filter on IQueryable when the EntityService retrieves data from the database.
+The QueryModifier is used in all methods on the EntityService.
 
-**Krav**: Applikationen skal kun vise Products, der ikke er "Discontinued"
+**Requirement**: The application should only display Products that are not "Discontinued"
 
-**Opgave**: Opret en partial klasse til den kodegenererede ProductsQueryModifier og override metoden "Modify".
+**Task**: Create a partial class for the code-generated ProductsQueryModifier and override the "Modify" method.
 
-**Udførelse**: 
+**Execution**: 
 
-1. Vælg "Entity Framework".
-2. Vælg "Products".
-3. Under "Code Tasks", vælg "Entity QueryModifier" og klik på "Add Code". Der vil nu blive genereret en ProductsQueryModifier.cs fil, som kan tilpasses som ønsket, som det er vist nedenfor. 
+1. Select "Entity Framework".
+2. Select "Products".
+3. Under "Code Tasks", choose "Entity QueryModifier" and click on "Add Code". A ProductsQueryModifier.cs file will now be generated, which can be customized as desired, as shown below. 
 
 ```cs
     public partial class ProductsQueryModifier 
@@ -21,4 +21,4 @@ QueryModifier'en bliver brugt i alle metoder på EntityServicen.
     }
 ```
 
-En QueryModifier kan også bruges til f.eks. at håndtere sikkerhed for en entititet. Så der f.eks. bliver injected en form for securityservice eller lignende ind i constructoren og så bliver Where-sætningen sat alt efter hvad den pågældende bruger har adgang til.
+A QueryModifier can also be used, for example, to handle security for an entity. So, for example, some form of security service or similar is injected into the constructor, and then the Where clause is set depending on what the particular user has access to.

@@ -1,44 +1,41 @@
-# 2 felter (bytes-og-filename)
+# 2 fields (bytes-and-filename)
 
-Hvis man vil understøtte at man kan redigere filer og uploade dem igen, skal der tilføjes et felt i tabellen Category. Feltet skal indeholde filnavnet. I dette tilfælde har vi udvidet Category tabellen med et felt "Filename".
-Herefter skal man konfigurere de to "Image" kontroller med hvilket felt der indeholder "FileName".
+If you want to support editing and re-uploading files, you need to add a field to the Category table. This field should contain the filename. In this case, we have extended the Category table with a "Filename" field.
+Then, you need to configure the two "Image" controllers with the field that contains the "FileName".
 
-I "User Interface" vælges "Picture"-feltet og i propertygriden kan man nu konfigurere property'en "FileNameField" på begge kontroller, som vist nedenfor.
+In "User Interface", select the "Picture" field and in the property grid, you can now configure the "FileNameField" property on both controllers, as shown below.
  ![image.png](../../media/to-felter_0.png)
 
-Desuden tilføjer vi feltet "Filename" til show og list.
+In addition, we add the "Filename" field to show and list.
 
  ![image.png](../../media/to-felter_1.png)
 
-På Show vil ikonet for andre filtyper end billed-filtyper vises.
-Eksempel for excel
+On Show, the icon for file types other than image file types will be displayed.
+Example for Excel
  ![image.png](../../media/to-felter_2.png)
 
-For billeder:
+For images:
 
  ![image.png](../../media/to-felter_3.png)
 
-## Rediger filer
+## Edit files
 
-Når man redigere så er der flere muligheder nu.
+When editing, there are now more options.
 
  ![image.png](../../media/to-felter_4.png)
 
-Åben fil - åbner filen (i dette tilfælde i excel)
-Åben file med - windows "Åben med" åbnes og man kan nu vælge hvilket program filen skal åbnes med.
-Erstat fil - uploade en anden fil
-Slet fil - sletter filen
+Open file - opens the file (in this case in Excel)
+Open file with - Windows "Open with" opens and you can now choose which program to open the file with.
+Replace file - upload a different file
+Delete file - deletes the file
 
-Hvis man klikker på "Åben fil" åbnes filen i excel og man kan begynde at redigere filen.
-Når man er færdig med at redigere filen, gemmes filen og luk excel, så man kommer tilbage til redigering.
-Nu ser toolbaren således ud:
+
+If you click on "Open file", the file opens in Excel and you can start editing the file.
+When you are done editing the file, save the file and close Excel, so you return to editing.
+Now the toolbar looks like this:
  ![image.png](../../media/to-felter_5.png)
 
-Hvis man klikker på "Upload fil" så uploades den fil man lige har redigeret.
+If you click on "Upload file", the file you just edited is uploaded.
 
-Herefter klikker man på "Gem" for hele vinduet og filen bliver gemt i selve databasen.
-Bemærk at feltet "Filename" bliver automatisk opdateret når man uploader en fil.
-
-
-
-
+Then click on "Save" for the entire window and the file is saved in the database itself.
+Note that the "Filename" field is automatically updated when you upload a file.

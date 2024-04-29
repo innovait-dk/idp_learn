@@ -1,30 +1,30 @@
 # Basic Validation
 
-**Krav**: Ansatte skal være over 18 år
+**Requirement**: Employees must be over 18 years old
 
-**Opgave**: Lave en validation rule på property'en "BirthDay". "BirthDay" skal være over tilbage 18 år fra dags dato.
+**Task**: Create a validation rule on the property "BirthDay". "BirthDay" should be more than 18 years ago from today's date.
 
-**Udførelse**: 
+**Execution**: 
 
-1. Vælg "Validation"
-2. Vælg "Employees"
-3. I "Code Tasks" vælg "Validator" og klik "Add Code".  Der bliver nu genereret en EmployeesValidator.cs fil, som frit kan tilpasses, som vist nedenfor.
+1. Select "Validation"
+2. Select "Employees"
+3. In "Code Tasks" select "Validator" and click "Add Code". An EmployeesValidator.cs file will now be generated, which can be freely customized, as shown below.
 
-I dette tilfælde er partial metoden "AfterInitialize" implementeret.
+In this case, the partial method "AfterInitialize" is implemented.
 
 ```cs
- public partial class EmployeesValidator
- {
-     partial void AfterInitialize()
-     {
-         RuleSet(RuleSetNames.PropertyRuleSetName, () =>
-         {
-             RuleFor(ent => ent.BirthDate).LessThan(DateTime.Now.AddYears(-18));
-         });
-     }
- }
+public partial class EmployeesValidator
+{
+    partial void AfterInitialize()
+    {
+        RuleSet(RuleSetNames.PropertyRuleSetName, () =>
+        {
+            RuleFor(ent => ent.BirthDate).LessThan(DateTime.Now.AddYears(-18));
+        });
+    }
+}
 ```
 
-Det betyder i UI ser det således ud, hvis man indtaster en "forkert" dato.
+In the UI, it looks like this if you enter an "incorrect" date.
 
 ![Alt text](media/validation.png)

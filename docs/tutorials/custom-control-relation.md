@@ -1,27 +1,27 @@
 # Custom control relation
 
-Det er muligt at lave en custom control på en felt, hvori der er relateret data.
-Eksempel på Category, hvor man gerne vil have vist listen for produkter med lidt ekstra formatering, logik m.m.
+It is possible to create a custom control on a field that contains related data.
+Example on Category, where you would like to display the list of products with some extra formatting, logic, etc.
 
-Som vist nedenfor
+As shown below
  ![image.png](../media/custom-control-relation_0.png)
 
-Her er vist kategoriens produkter i en liste med produktnavn og pris.
+Here, the category's products are displayed in a list with product name and price.
 
-Det gøres ved 
-1. at hakke products af, som vist nedenfor.
+This is done by 
+1. Checking off products, as shown below.
 
  ![image.png](../media/custom-control-relation_1.png)
 
-2. Sætte ShowControl til "Custom Control", som vist nedenfor.
+2. Set ShowControl to "Custom Control", as shown below.
 
  ![image.png](../media/custom-control-relation_2.png)
 
-3. Kodegenere.
+3. Generate code.
 
-Der er nu kodegeneret en ny fil under "Categories\Controls\ShowProductsControl.xaml".
-Som standard indeholder den bare en textblock hvor bindingen er sat til Products-property'en på Category-entiteten.
-Det skal ændres da vi vil binde på en collection, der ligger på viewmodellen.
+A new file has now been code-generated under "Categories\Controls\ShowProductsControl.xaml".
+By default, it just contains a text block where the binding is set to the Products property on the Category entity.
+This needs to be changed as we want to bind to a collection that is on the view model.
 
 ```xml
 <UserControl x:Class="NorthwindClient.UI.Categories.Controls.ShowProductsControl"

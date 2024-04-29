@@ -1,12 +1,12 @@
-**Krav**: På forskellige steder i applikationen skal det fulde navn på en "Employees" vises. 
+**Requirement**: In various places in the application, the full name of an "Employees" should be displayed.
 
-**Opgave**: Opret en property på Employees-klassen, der kan kombinere FirstName og LastName.
+**Task**: Create a property on the Employees class that can combine FirstName and LastName.
 
-**Udførelse**: 
+**Execution**:
 
-1. Vælg "Entity Framework".
-2. Vælg "Employees".
-3. Under "Code Tasks" vælges "Entity" og klikke på "Add Code". Der vil nu blive genereret en fil ved navn Employees.cs, som kan tilpasses som ønsket, som det er illustreret nedenfor. (Bemærk attributten [NotMapped](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.schema.notmappedattribute?view=net-7.0))
+1. Select "Entity Framework".
+2. Select "Employees".
+3. Under "Code Tasks", select "Entity" and click on "Add Code". A file named Employees.cs will now be generated, which can be customized as desired, as illustrated below. (Note the attribute [NotMapped](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.schema.notmappedattribute?view=net-7.0))
 
 ```cs
     public partial class Employees
@@ -22,13 +22,13 @@
     }
 ```
 
-Nu er denne property klar til at blive anvendt i applikationen. (Se et eksempel på tilpasning i [Mapper](../UI/Mapper.md)).
+Now this property is ready to be used in the application. (See an example of customization in [Mapper](../UI/Mapper.md)).
 
-Alternativt, det kan også gøres på denne måde:
+Alternatively, it can also be done this way:
 
 ```cs
       [NotMapped]
       public string FullName { get { return $"{FirstName} {LastName}"; } }
 ```
 
-Vær dog opmærksom på, at hvis property'en bruges sammen med AutoMapper (se senere under User Interface), vil Entity Framework inkludere alle felter i SELECT-statementet og vil alt andet lige give en dårligere performance. Specielt hvis der er "store" felter i tabellen f.eks. bytes/text felter.
+However, be aware that if the property is used together with AutoMapper (see later under User Interface), Entity Framework will include all fields in the SELECT statement and will generally give poorer performance. Especially if there are "large" fields in the table e.g., bytes/text fields.

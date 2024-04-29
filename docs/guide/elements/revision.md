@@ -1,43 +1,35 @@
 # Revision
 
-Formålet med "Revision" elementet er at implementere datahistorik for den
-enkelte entitet/tabel.
+The purpose of the "Revision" element is to implement data history for each entity/table.
 
-For at tilføje "Revision" skal du vælge fanen "Designer" og klikke på knappen "Add ArchitectureItem…" og vælg "Revision".
+To add "Revision", select the "Designer" tab and click on the "Add ArchitectureItem…" button and choose "Revision".
 
-Designer for "Revision" ser sådan ud:
+The designer for "Revision" looks like this:
 
 ![Alt text](media/revision.png)
 
-Det er muligt at afkrydse de entiteter/tabels, der skal have revision.
+It is possible to check the entities/tables that should have revision.
 
-Hvis der sættes kryds ved Territorier og klik på "Create Code" vil følgende kode vil blive
-genereret.
+If you check "Territories" and click on "Create Code", the following code will be generated.
 
 ![Alt text](media/revision-1.png)
 
-Kør "AlterScript.sql" i Northwind-databasen. Scriptet vil oprette en
-"Territories"-tabel i "Revision"-skemaet med følgende felter.
+Run "AlterScript.sql" in the Northwind database. The script will create a "Territories" table in the "Revision" schema with the following fields.
 
 ![](../media/revision_2.png)
 
-Og SQL-Triggers oprettes på "Territories"-tabellen.
+And SQL Triggers are created on the "Territories" table.
 
 ![](../media/revision_3.png)
 
-Nu er databasen klar til at håndtere revision. Enhver ændring i tabellen
-"Dbo.Territories" vil blive afspejlet i "Revision.Territories".
+Now the database is ready to handle revision. Any change in the "Dbo.Territories" table will be reflected in "Revision.Territories".
 
-Kør applikationen. Vælg listen over "Territories" og vælg en "Territory".
-Bemærk, at der er dukket en ny knap op i værktøjslinjen.
+Run the application. Select the list of "Territories" and choose a "Territory". Note that a new button has appeared in the toolbar.
 
 ![](../media/revision_4.png)
 
-Klik på "Rediger" og ændr "Beskrivelse" og klik på "Gem". Klik derefter på knappen
-"Historik". Et vindue vil åbne sig:
+Click on "Edit" and change the "Description" and click on "Save". Then click on the "History" button. A window will open:
 
 ![](../media/revision_5.png)
 
-På højre side opregnes, hvem og hvornår noget er ændret på den pågældende person
-entitet. På venstre side vises ændringen i spørgsmål; hvilket felt og gammel
-og ny værdi.
+On the right side, it lists who and when something was changed on the respective person entity. On the left side, the change in question is shown; which field and old and new value.

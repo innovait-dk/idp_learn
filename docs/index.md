@@ -5,15 +5,15 @@ hide:
 ---
 # Innova Developer Platform
 
-Innova Developer Platform er en essentiel løsning for Microsoft-udviklere, specialiseret i at skabe avancerede virksomhedsapplikationer
+The Innova Developer Platform is an essential solution for Microsoft developers, specialized in creating advanced enterprise applications
 
 <div class="row">
     <div class="column">
         <a href="gettingstarted/visualstudio/">
             <div class="card">
                 <div class="container">
-                    <h4><b>Kom godt i gang</b></h4>
-                    <p>Sådan kommer du i gang</p>
+                    <h4><b>Get Started</b></h4>
+                    <p>How to get started</p>
                 </div>
             </div>
         </a>
@@ -23,7 +23,7 @@ Innova Developer Platform er en essentiel løsning for Microsoft-udviklere, spec
             <div class="card">
                 <div class="container">
                     <h4><b>Designer</b></h4>
-                    <p>Introduktion til Innova Application Designer</p>
+                    <p>Introduction to Innova Application Designer</p>
                 </div>
             </div>
         </a>
@@ -36,7 +36,7 @@ Innova Developer Platform er en essentiel løsning for Microsoft-udviklere, spec
             <div class="card">
                 <div class="container">
                     <h4><b>How-To-Guides</b></h4>
-                    <p>Sådan tilpasser du applikationen</p>
+                    <p>How to customize the application</p>
                 </div>
             </div>
         </a>
@@ -46,8 +46,8 @@ Innova Developer Platform er en essentiel løsning for Microsoft-udviklere, spec
             <div class="card">
                 <div class="container">
                 <p></p>
-                    <h4><b>Hvad er Innova Developer Platform?</b></h4>
-                    <p>Baggrund og vision</p>
+                    <h4><b>What is Innova Developer Platform?</b></h4>
+                    <p>Background and vision</p>
                 </div>
             </div>
         </a>

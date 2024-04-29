@@ -1,26 +1,24 @@
 # Appsettings 
 
-Formålet med elementerne "Appsettings"  er at implementere applikationsvariabler lagreret i SQL databasen i stedet for i f.eks. en konfigurationsfil.
-Dermed kan applikationsvariabler ændres løbende f.eks. inde i applikation af en administrator. 
+The purpose of the "Appsettings" elements is to implement application variables stored in the SQL database instead of, for example, a configuration file.
+This allows application variables to be changed continuously, for example, within the application by an administrator.
 
-For at tilføje ”Appsettings" vælges fanebladet ”Designer” og klik på knappen ”Add ArchitectureItem…” og vælg ”Appsettings".
+To add "Appsettings", select the "Designer" tab and click on the "Add ArchitectureItem..." button and choose "Appsettings".
 
-Designeren for ”Appsettings ser således ud:
+The designer for "Appsettings" looks like this:
 
 ![Alt text](media/appsettings-1.png)
 
-Her kan man indtaste parameter-navne i liste under "Name" og hvilken .net type i "ValueType".
+Here you can enter parameter names in the list under "Name" and the .net type in "ValueType".
 
-Resten af felter bruges kun hvis man vil vise alle appsettings i en propertygrid (se senere).
+The rest of the fields are only used if you want to display all appsettings in a property grid (see later).
 
-Når man kodegenerer laves to filer:
+When you generate code, two files are created:
 
 - AppSettings.tt.cs 
 - AppSettings.tt.sql
 
-Sql-filen indeholder sql-script til oprette tabellen og indsættelse af data i tabellen.
+The SQL file contains the SQL script to create the table and insert data into the table.
 ![sql table](media/appsettings_2021-04-06-13-20-08.png)
 
-cs-filen indeholde koden, som gør at man nu kan bruge appsettings i applikationen.
-
-
+The cs file contains the code, which allows you to now use appsettings in the application.

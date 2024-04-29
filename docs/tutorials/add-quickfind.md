@@ -1,23 +1,23 @@
-# Opret quickfind
+# Create QuickFind
 
-QuickFinds laves i shell'ens viewmodel. 
+QuickFinds are made in the shell's viewmodel.
 
-Nedenstående er der vist, hvordan man kan lave QuickFinds på to forskellige måder i constructoren på MainViewModel.cs.
+Below is shown how to create QuickFinds in two different ways in the constructor of MainViewModel.cs.
 
-## Eksempel 1 - QuickFind på et felt
-Det første eksempel viser, hvordan man laver en QuickFind på feltet `CompanyName` på entiteten `Customers`. 
+## Example 1 - QuickFind on a field
+The first example shows how to create a QuickFind on the `CompanyName` field of the `Customers` entity.
 
-I designeren:
+In the designer:
 
-Vælg "User Interface"
+Select "User Interface"
 
-Vælg "Customers"
+Select "Customers"
 
-Vælg feltet "CompanyName"
+Select the "CompanyName" field
 
-I "Code Tasks" vælg "QuickFind" og klik "Add Code". Der bliver nu genereret en QuickFindCompanyName.cs fil, som frit kan tilpasses, som vist nedenfor.
+In "Code Tasks" select "QuickFind" and click "Add Code". A QuickFindCompanyName.cs file is now generated, which can be freely adapted as shown below.
 
-Implementer koden som beskrevet i TODO:-kommentaren.
+Implement the code as described in the TODO: comment.
 ```csharp
   //TODO: this should be added to the servicecollection like this:
   //serviceCollection.AddTransient<Innova.Prism.Library.Search.ISearchItemViewModel, QuickFindCompanyName>();
@@ -42,26 +42,26 @@ Implementer koden som beskrevet i TODO:-kommentaren.
   }
 ```
 
-## Eksempel 2 - QuickFind på flere felter
-Det andet eksempel viser, hvordan man laver en QuickFind, som søger på flere felter på entiteten `Employees`.
+## Example 2 - QuickFind on multiple fields
+The second example shows how to create a QuickFind that searches on multiple fields of the `Employees` entity.
 
-I designeren:
+In the designer:
 
-Vælg "User Interface"
+Select "User Interface"
 
-Vælg "Employees"
+Select "Employees"
 
-Vælg feltet "LastName"
+Select the "LastName" field
 
-I "Code Tasks" vælg "QuickFind" og klik "Add Code". Der bliver nu genereret en QuickFindLastName.cs fil, som frit kan tilpasses, som vist nedenfor.
+In "Code Tasks" select "QuickFind" and click "Add Code". A QuickFindLastName.cs file is now generated, which can be freely adapted as shown below.
 
 ```csharp
-    public class QuickFindNavne : QuickFindSearchItemViewModel<Northwind.Data.Entity.Employees>, ISearchItemViewModel
+    public class QuickFindNames : QuickFindSearchItemViewModel<Northwind.Data.Entity.Employees>, ISearchItemViewModel
     {
-        public QuickFindNavne(IQuickFindNavigationService<Northwind.Data.Entity.Employees> findNavigationService) : 
+        public QuickFindNames(IQuickFindNavigationService<Northwind.Data.Entity.Employees> findNavigationService) : 
             base(findNavigationService, e => e.LastName)
         {
-            this.Title = "Navne";
+            this.Title = "Names";
         }
 
         public override Expression<Func<Northwind.Data.Entity.Employees, bool>> GetSearchExpression()

@@ -1,15 +1,15 @@
 # Code Tasks - Customize
 
-Fanebladet "Customize" giver adgang til alle "Code Tasks", så er man fri for at klikke rundt i konfigurationen for at finde de relevante Code Tasks.
+The "Customize" tab provides access to all "Code Tasks", so you are free from clicking around in the configuration to find the relevant Code Tasks.
 
 ![Alt text](media/CodeTasksCustomization.png)
 
-Efter der er valgt en Code Task vises detaljerne for Code Tasken i højre side. Og i ovenstående tilfælde skal der vælges en entitet og derefter klikkes på "Add Code".
+After a Code Task is selected, the details for the Code Task are displayed on the right side. And in the above case, an entity should be selected and then click on "Add Code".
 
-Hvis der er valgt f.eks. DbContext, som nedenfor, så vises listen med entiteter ikke.
+If, for example, DbContext is selected, as shown below, the list of entities is not displayed.
 
 ![](media/CodeTasksCustomization-1.png)
 
-"Customize" er specielt velegnet, hvor der er mange Code Tasks. Nedenfor vises "Customize" for "User Interface".
+"Customize" is especially suitable where there are many Code Tasks. Below, "Customize" for "User Interface" is shown.
 
 ![Alt text](media/CodeTasksCustomization-2.png)

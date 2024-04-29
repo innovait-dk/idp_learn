@@ -1,35 +1,33 @@
 # Search
 
-Der kan laves to søge-skærmbilleder: Simple og Avanced.
+Two types of search screens can be created: Simple and Advanced.
 
 **Simple**
 
 ![Alt text](media/search.png)
 
-**Avanced**
+**Advanced**
 
 ![Alt text](media/search-1.png)
 
-Og de to skærmbilleder kan vises på to forskellige måder: I værktøjslinen eller oven over listen:
+And the two screens can be displayed in two different ways: In the toolbar or above the list:
 
-
-**Værktøjslinen**
+**Toolbar**
 
 ![Alt text](media/search-3.png)
 
-**Oven over listen**
+**Above the list**
 
 ![Alt text](media/search-2.png)
 
-I designeren vælges "User interface" og entiteten der skal laves søge-skærmbillede for.
+In the designer, select "User interface" and the entity for which the search screen should be created.
 
-Der vælges hvilke felter der skal være søgebare, som vist nedenfor.
+Choose which fields should be searchable, as shown below.
 
 ![Alt text](media/search-4.png)
 
-Dernæst vælges fanebladet "Search" og i visual studio property-vinduet vælges konfigurationen for søge-skærmbilledet.
+Next, select the "Search" tab and in the Visual Studio property window, select the configuration for the search screen.
 
 ![Alt text](media/search-5.png)
 
-Herefter klikkes på "Create code".
-
+Then click on "Create code".

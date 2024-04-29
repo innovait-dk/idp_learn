@@ -1,14 +1,14 @@
 # Entity Factory
 
-**Krav**: Property'en "HireDate" på "Employees" skal have en standardværdi sat til dagens dato, når der oprettes en ny medarbejder.
+**Requirement**: The "HireDate" property on "Employees" should have a default value set to today's date when a new employee is created.
 
-**Opgave**: Opret en partial klasse til den kodegenererede EmployeesEntityFactory og implementer partial metoden "SetDefaults".
+**Task**: Create a partial class for the code-generated EmployeesEntityFactory and implement the partial method "SetDefaults".
 
-**Udførelse**: 
+**Execution**: 
 
-1. Vælg "Entity Framework".
-2. Vælg "Employees".
-3. Under "Code Tasks", vælg "EntityFactory" og klik på "Add Code". Der vil nu blive genereret en EmployeesEntityFactory.cs fil, som kan tilpasses som ønsket, som det er vist nedenfor. I dette eksempel er partial metoden "SetDefaults" implementeret.
+1. Select "Entity Framework".
+2. Select "Employees".
+3. Under "Code Tasks", choose "EntityFactory" and click on "Add Code". An EmployeesEntityFactory.cs file will now be generated, which can be customized as desired, as shown below. In this example, the partial method "SetDefaults" is implemented.
 
 ```cs
     public partial class EmployeesEntityFactory
@@ -20,6 +20,6 @@
     }
 ```
 
-Nu vil standardværdien for "HireDate" blive sat til dagens dato, når en ny "Employees" oprettes.
+Now the default value for "HireDate" will be set to today's date when a new "Employees" is created.
 
-![Billede](media/index.png)
+![Image](media/index.png)

@@ -1,16 +1,16 @@
-Når views og kontrollere til List- og Show-skærmbilleder kodegenereres, oprettes der også Model-klasser. I disse klasser mappes de individuelle dataentiteter ved hjælp af AutoMapper.
+When views and controls for List and Show screens are code-generated, Model classes are also created. In these classes, individual data entities are mapped using AutoMapper.
 
-For eksempel, for dataentiteten "Employees", er der klasserne "EmployeesList" og "EmployeesShow", som anvendes i List- og Show-views.
+For example, for the data entity "Employees", there are the classes "EmployeesList" and "EmployeesShow", which are used in List and Show views.
 
-Model-klasserne indeholder de properties, der er valgt i Designeren:
+The Model classes contain the properties that are selected in the Designer:
 
 ![Alt text](media/Mapper.png)
 
-Den ovenstående konfiguration resulterer i følgende klasser:
+The above configuration results in the following classes:
 
 ![Alt text](media/Mapper-1.png)
 
-Selv mappingen er kodegenereret i filen "AutoMapperUIProfiles.tt.cs", som vist nedenfor:
+The mapping itself is code-generated in the file "AutoMapperUIProfiles.tt.cs", as shown below:
 
 ```csharp
     public partial class EmployeesListMapperProfile : Profile
@@ -34,21 +34,21 @@ Selv mappingen er kodegenereret i filen "AutoMapperUIProfiles.tt.cs", som vist n
 
 ```
 
-## Tilpasning
+## Customization
 
-I et andet eksempel på tilpasning [Entity](../Entity/Entity.md) skal den custom-property "FullName" mappes over til data-properties.
+In another example of customization [Entity](../Entity/Entity.md), the custom property "FullName" needs to be mapped to data properties.
 
-**Krav**: På forskellige steder i applikationen skal det fulde navn på en "Employees" vises.
+**Requirement**: In various places in the application, the full name of an "Employees" should be displayed.
 
-**Opgave**: Opret en property i Employees-klassen, som kan bruges til at mappe "FirstName" og "LastName" sammen.
+**Task**: Create a property in the Employees class that can be used to map "FirstName" and "LastName" together.
 
-**Udførelse**: 
+**Execution**: 
 
-1. Vælg "User Interface"
-2. Vælg "Employees"
-3. Skift til fanebladet "List"
-4. I "Code Tasks" vælg "MapperProfile" og klik "Add Code". Der vil nu blive genereret en fil ved navn "EmployeesListMapperProfile.cs".
-5. Implementer den partielle metode "AfterConfiguration" og foretag mappingen, som vist nedenfor.
+1. Select "User Interface"
+2. Select "Employees"
+3. Switch to the "List" tab
+4. In "Code Tasks" select "MapperProfile" and click "Add Code". A file named "EmployeesListMapperProfile.cs" will now be generated.
+5. Implement the partial method "AfterConfiguration" and perform the mapping, as shown below.
 
 ```csharp
         partial void AfterConfiguration(IMappingExpression<Employees, EmployeesList> mapping)
@@ -57,6 +57,6 @@ I et andet eksempel på tilpasning [Entity](../Entity/Entity.md) skal den custom
         }
 ```
 
-Listen vil nu fremstå som følger:
+The list will now appear as follows:
 
 ![Alt text](media/Mapper-4.png)

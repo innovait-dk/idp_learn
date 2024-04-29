@@ -27,6 +27,3 @@ Goto:  http://127.0.0.1:8000/
 
 ctrl-c for shutting down the local website.
 
-## See website on server
-
-Build/Release publish the site to: http://buildsrv01/idpdocs/

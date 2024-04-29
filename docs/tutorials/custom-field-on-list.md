@@ -1,16 +1,16 @@
-## Opret den nye property
+## Create the new property
 
-Opret en ny partial fil, indeholdende list objektet i samme namespace som det kodegenererede tilsvarende list objekt, og tilføj den ønskede property. 
+Create a new partial file, containing the list object in the same namespace as the corresponding code-generated list object, and add the desired property.
 
-eks:
+Example:
 
 ```csharp
 namespace NorthwindClient.Entity
 {
     public partial class EmployeesList
     {
-        //Opret custom felt på Liste
-        //Ny custom property
+        // Create custom field on List
+        // New custom property
         public System.String FullName
         {
             get
@@ -22,11 +22,11 @@ namespace NorthwindClient.Entity
 }
 ```
 
-## Tilføj det nye custom felt i listen
+## Add the new custom field to the list
 
-Opret en partial fil til List kontrollen, i samme namespace som den kodegenererede List kontrol (For den valgte entitetstype), og tilføj det nye kolonne.
+Create a partial file for the List control, in the same namespace as the code-generated List control (For the selected entity type), and add the new column.
 
-eks:
+Example:
 
 ```csharp
 namespace NorthwindClient.UI.Employees.Controls
@@ -35,18 +35,17 @@ namespace NorthwindClient.UI.Employees.Controls
     {
         partial void AfterInitializeColumns()
         {
-            //Opret custom felt på list:
-            //Tilføj  det nye felt, bemærk at EmployeesList, bliver benyttet til T og TResult generic typerne for at kunne vælge de nye felt.
+            // Create custom field on list:
+            // Add the new field, note that EmployeesList is used for the T and TResult generic types to be able to select the new field.
             this.AddColumn<NorthwindClient.Entity.EmployeesList, NorthwindClient.Entity.EmployeesList>(e => e.FullName, e => e.FullName, e => e.FullName);
         }
     }
 }
-
 ```
 
-## Tilføj caption til det nye felt
-For at kunne få den korrekte kolonne header, åbnes IAD filen, og i Entity Captions tilføjes en ny række. Sammensæt Name ud fra <EntityName>_<PropertyName> 
+## Add caption to the new field
+To get the correct column header, open the IAD file, and in Entity Captions add a new row. Compose Name from <EntityName>_<PropertyName> 
 
-eks. EmployeesList_FullName. og indtast den ønskede caption.
+Example: EmployeesList_FullName. and enter the desired caption.
 
  ![image.png](../media/opret-custom-felt-på-liste_0.png)

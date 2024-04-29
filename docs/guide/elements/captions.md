@@ -1,33 +1,32 @@
 # Resx Syncing EntityCaptions
 
-"Resx Syncing EntityCaptions" bygger oven på "Resx".
+"Resx Syncing EntityCaptions" builds on top of "Resx".
 
-Formålet med "Resx Syncing EntityCaptions" er at oversætte navnene på datamodellen og dermed gøre applikationen flersproget.
-Den læser meta-data fra "Entity Framework" (klassenavne og properties) og oprette selv posterne i listen.
+The purpose of "Resx Syncing EntityCaptions" is to translate the names of the data model and thereby make the application multilingual. It reads metadata from "Entity Framework" (class names and properties) and creates the entries in the list itself.
 
-For at tilføje "Resx Syncing EntityCaptions" skal du vælge fanen "Designer" og klikke på knappen "Add ArchitectureItem...". Vælg "Resx Syncing EntityCaptions".
+To add "Resx Syncing EntityCaptions", select the "Designer" tab and click on the "Add ArchitectureItem..." button. Choose "Resx Syncing EntityCaptions".
 
-Derefter får du følgende designer:
+You will then get the following designer:
 
 ![Alt text](media/captions.png)
 
-Den første kolonne indeholder de termer, som koden bruger, og den næste kolonne (under "Dansk (Danmark)") er en liste over de termer / overskrifter, der vises i applikationen.
+The first column contains the terms that the code uses, and the next column (under "Danish (Denmark)") is a list of the terms/headings displayed in the application.
 
-Der kan tilføjes nye sprog ved at klik på "Add/Remove culture".
+New languages can be added by clicking on "Add/Remove culture".
 
-Du kan søge i listen under "Navn" eller "Dansk (Danmark)".
+You can search in the list under "Name" or "Danish (Denmark)".
 
-Eksempel:
+Example:
 
-Søg efter "shippers" under "Navn", og designeren vil se sådan ud:
+Search for "shippers" under "Name", and the designer will look like this:
 
 ![](../media/captions_1.png)
 
-I kolonnen "Dansk (Danmark)" kan du nu justere de termer / overskrifter, du ønsker at have i applikationen.
+In the "Danish (Denmark)" column, you can now adjust the terms/headings you want to have in the application.
 
 ![](../media/captions_2.png)
 
-Klik på "Create Code" og kør applikationen. Skærmbillederne vil nu have de nye termer / overskrifter:
+Click on "Create Code" and run the application. The screens will now have the new terms/headings:
 
 ![](../media/captions_3.png)
 
@@ -35,4 +34,4 @@ Klik på "Create Code" og kør applikationen. Skærmbillederne vil nu have de ny
 
 ![](../media/captions_5.png)
 
-Det er også muligt at ændre Captions for entiteter i arkitekturelementet "User Interface".
+It is also possible to change Captions for entities in the "User Interface" architectural element.

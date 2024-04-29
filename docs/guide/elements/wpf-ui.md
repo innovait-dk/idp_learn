@@ -1,136 +1,118 @@
-# User Inteface
+# User Interface
 
-Formålet med elementet "User Inteface" er kun at konfigurere og generere kode til
-applikationens brugergrænseflade.
+The purpose of the "User Interface" element is solely to configure and generate code for the application's user interface.
 
-!!! note "User Inteface"
-    I nedenstående eksempel anvendes komponenter fra Telerik i applikationen.
+!!! note "User Interface"
+    In the following example, components from Telerik are used in the application.
 
-    Innova IT har kodegenerering for [Telerik](https://www.telerik.com/) og [Infragistics](https://www.infragistics.com/).
-    
+    Innova IT has code generation for [Telerik](https://www.telerik.com/) and [Infragistics](https://www.infragistics.com/).
 
-
-
-Vælg fanen "Designer" og klik på knappen "Tilføj arkitekturelement",
-vælg "User Inteface".
+Select the "Designer" tab and click on the "Add ArchitectureItem" button, choose "User Interface".
 
 ![](../media/ui_0.png)
 
+## Configuration
 
-## Konfiguration
-
-
-Når elementet "User Inteface" er valgt, vises følgende designer:
+When the "User Interface" element is selected, the following designer is displayed:
 
 ![Alt text](media/wpf-ui-5.png)
 
-Venstre side lister alle de entiteterne, der er valgt at der skal genereres skærmbilleder for. 
-For at se alle entiteter i applikationen, klik på "Show All entities". Her vælges entiteterne ved at sætte hak.
+The left side lists all the entities that are selected to generate screens for. To see all entities in the application, click on "Show All entities". Here, entities are selected by checking the box.
 
-Højre side lister den valgte entitets felter. For hver entitet bliver der lavet 5 skærmbilleder: 
+The right side lists the fields of the selected entity. For each entity, 5 screens are created:
 
-- Show - skærmbillede til at vise den enkelte entitet.
-- List - skærmbillede med liste af entiteter.
-- Edit - skærmbillede til redigering af den enkelte entitet.
-- Insert - skærmbillede til at indsæt ny entitet.
-- Search - skærmbillede til at søgning.
+- Show - screen to display the individual entity.
+- List - screen with a list of entities.
+- Edit - screen for editing the individual entity.
+- Insert - screen to insert a new entity.
+- Search - screen for searching.
 
-Ved at sætte et hak ud for et felt, under et "skærmbillede" betyder at det felt kommer med i skærmbilledet.
+By checking a box next to a field, under a "screen", it means that the field will be included in the screen.
 
-Så i eksemplet ovenfor vil felterne: CompanyName, ContactName,
-ContactTitle, Address og City blive vist i listen for Suppliers. 
+So in the example above, the fields: CompanyName, ContactName, ContactTitle, Address, and City will be shown in the list for Suppliers.
 
-### Kontroller
+### Controls
 
-Det er auto-konfigureret, hvilke kontroller (tekstfelt, etiket, rullemenu osv.) der
-skal bruges i individuelle felter i visning, redigering, indsættelse og søgning. Det sker baseret på regler
-om datatypen og eventuelle relationer.
+It is auto-configured, which controls (text field, label, dropdown menu, etc.) should be used in individual fields in display, editing, insertion, and search. This is based on rules about the data type and any relationships.
 
-For eksempel, for entiteten "Territories"
+For example, for the entity "Territories"
 
-| Datatyper | ![](media/ui_2021-02-08-13-16-18.png) |
+| Data types | ![](media/ui_2021-02-08-13-16-18.png) |
 | Data | ![](media/_ui2021-02-08-13-14-51.png) |
 
-Den auto-konfigurerede kontrol for feltet "TerritoryDescription" er indstillet til
-"Label" på Vis og Tekstboks som UpdateControl (indsæt, rediger og søg). Det kan
-ses ved at vælge feltet "TerritoryDescription" i designeren, så vises de
-konfigurerede værdier i Properties-vinduet i Visual Studio.
+The auto-configured control for the "TerritoryDescription" field is set to "Label" on Show and Textbox as UpdateControl (insert, edit, and search). This can be seen by selecting the "TerritoryDescription" field in the designer, then the configured values are displayed in the Properties window in Visual Studio.
 
 ![](../media/ui_3.png)
 
 ![](../media/ui_4.png)
 
-| Visning | Redigering | Indsæt |
+| Show | Edit | Insert |
 | -------------------------------------------- | ---------------------------------------- | ----------------------------------- |
 | ![Alt text](media/wpf-ui.png) | ![Alt text](media/wpf-ui-1.png) | ![Alt text](media/wpf-ui-2.png) |
 
-Disse kan konfigureres til andre kontroller ved at ændre f.eks. UpdateControl
-"Textbox" til "BigTextBox" (en stor tekstboks med linjeskift). Klik på "Create Code"
-og kør applikationen. Så vil indsæt/redigeringsskærmbilledet / visningen se sådan ud:
+These can be configured to other controls by changing e.g. UpdateControl "Textbox" to "BigTextBox" (a large text box with line breaks). Click on "Create Code" and run the application. Then the insert/edit screen / view will look like this:
 
 ![](../media/ui_5.png)
 
-For feltet / ejendommen "RegionID" er der en relation til "Region" og kontrollen
-indstilles automatisk til Label for Visning og "ComboBox - Telerik" til UpdateControl:
+For the field / property "RegionID" there is a relation to "Region" and the control is automatically set to Label for Show and "ComboBox - Telerik" for UpdateControl:
 
 ![](../media/ui_6.png)
 
 ![](../media/ui_7.png)
 
-Og redigering / indsættelse ser sådan ud:
+And editing / insertion looks like this:
 
 ![](../media/ui_8.png)
 
-Følgende kontroller er tilgængelige:
+The following controls are available:
 
-| Kontrolnavn | Beskrivelse |
+| Control name | Description |
 | --------------------------------------- | --------- -------------------------------------------------- ------------------------------------- |
 | Calendar - Telerik | Telerik - RadDateTimePicker |
-| Checkbox | Afkrydsningsfelt |
-| Checkbox - Readonly | Afkrydsningsfelt, bruges primært til visningsskabelon |
-| Checkbox list | Afkrydsningsliste, bruges til mange-til-mange-forhold |
-| Combobox - Telerik | Telerik radcombobox, der filtrerer værdier i henhold til det, der er skrevet i den. |
-| ComboboxWithContains - Telerik | Telerik radcombobox, der filtrerer værdier i henhold til det, der er skrevet i den og viser listen. |
-| Combobox with add button - Telerik| Combobox, hvor man kan tilføje entiteter til combobox'en  |
-| Custom kontrol | Brugerdefineret kontrol, valgt hvis du vil kode din egen kontrol til det specifikke felt. |
+| Checkbox | Checkbox |
+| Checkbox - Readonly | Checkbox, primarily used for display template |
+| Checkbox list | Checkbox list, used for many-to-many relationships |
+| Combobox - Telerik | Telerik radcombobox, filtering values according to what is written in it. |
+| ComboboxWithContains - Telerik | Telerik radcombobox, filtering values according to what is written in it and displays the list. |
+| Combobox with add button - Telerik| Combobox, where you can add entities to the combobox |
+| Custom control | Custom control, selected if you want to code your own control for the specific field. |
 | Currency - Telerik| RadMaskedCurrencyInput |
-| Image - Editor | Rediger et varbinary-felt i databasen. Upload filer. |
-| Image - Show | Viser et varbinary-felt fra databasen som et billede. |
-| Label | En tekstblok med mulighed for at indstille formatstreng. |
-| LabelList | En liste der viser relateret entiteter som en liste. |
-| LinkButton | En knap, der vises som et hyperlink. Bruges til at vise data på et klikbart label. |
+| Image - Editor | Edit a varbinary field in the database. Upload files. |
+| Image - Show | Displays a varbinary field from the database as an image. |
+| Label | A text block with the option to set format string. |
+| LabelList | A list that shows related entities as a list. |
+| LinkButton | A button that appears as a hyperlink. Used to display data on a clickable label. |
 | Numeric - Telerik| RadMaskedNumericInput |
-| RadioButtonList | viser en Radiobutton-liste med relateret entiteter |
-| Relation Label - List comma separated | Som ovenfor, men vist som kommaet indstillet på en linje. |
+| RadioButtonList | displays a Radiobutton list with related entities |
+| Relation Label - List comma separated | As above, but shown as comma set on a line. |
 | Textbox - Telerik| RadWatermarkTextBox  |
 
+### Relations
 
-### Relationer
-
-Under listen med felter er listet entitetens relationer. Hvis der sættes hak i relationen bliver relationen vist som faneblad i på show-siden.
+Under the list of fields, the entity's relations are listed. If a check is placed in the relation, the relation is displayed as a tab on the show page.
 
 ![Alt text](media/wpf-ui-3.png)
 
-Her er resultatet af ovenstående konfiguration.
+Here is the result of the above configuration.
 
 ![Alt text](media/wpf-ui-4.png)
 
 ## Captions
 
-Ved at vælge fanebladet "Captions" kan alle captions, tooltips og Watermarks for den enkelte entitet nemt vedligeholdelse.
+By selecting the "Captions" tab, all captions, tooltips, and Watermarks for the individual entity can easily be maintained.
 
-Nedenfor er vist for Categories.
+Below is shown for Categories.
 
 ![Alt text](media/wpf-ui-6.png)
 
 ## UI Designer
 
-Som standard viser alle felter i show/edit/insert i en række. Det kan tilpasses ved at bruge fanebladet "UI Designer".
+By default, all fields in show/edit/insert are displayed in a row. This can be customized by using the "UI Designer" tab.
 
-I "UI Designer" designes en grid med x antal Columns og x antal Rows. En celle kan så indeholde en Group af felter. Nedenfor er vist en konfiguration af en grid til Employees
+In the "UI Designer", a grid with x number of Columns and x number of Rows is designed. A cell can then contain a Group of fields. Below is shown a configuration of a grid for Employees
 
 ![Alt text](media/wpf-ui-7.png)
 
-Denne konfiguration gør at show/edit/insert vil blive vist som nedenfor:
+This configuration makes the show/edit/insert will be displayed as below:
 
 ![Alt text](media/wpf-ui-8.png)

@@ -1,16 +1,14 @@
-# Dropdown med tilføj-ny funktionalitet
+# Dropdown with add-new functionality
 
-Der ønskes nogle gange mulighed for at kunne tilføje til dropdownlisten med det samme, uden at skulle i Administrationsmodulet og gøre dette. Denne nye kontrol, giver mulighed for at, via en ny opret knap, at tilføje direkte indefra indtastningsformularen.
+Sometimes there is a need to be able to add to the dropdown list immediately, without having to go to the Administration module to do this. This new control allows you to add directly from the input form via a new create button.
 
-## Vælg kontroltype
-I designeren, under User interface, vælges det felt man ønsker skal have tilknyttet kontrollen. Og kontrollen tilvælges som illustreret i følgende:
+## Choose control type
+In the designer, under User Interface, select the field you want to associate with the control. And the control is selected as illustrated in the following:
 
 ![image.png](../media/dropdown-med-tilføj-ny-funktionalitet_0.png)
 
-Følgende vil et eksempel på entiteten "Product" blive vist. Her vil SupplierId få tilknyttet den ny kontroltype.
+The following will show an example of the "Product" entity. Here, SupplierId will be associated with the new control type.
 
-Her vises den nye kontrol, som er en dropdown kontrol med tilknyttet "Opret knap"
+Here the new control is shown, which is a dropdown control with an associated "Create button"
 
 ![image.png](../media/dropdown-med-tilføj-ny-funktionalitet_1.png)
-
-

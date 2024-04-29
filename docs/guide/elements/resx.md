@@ -1,40 +1,37 @@
 # RESX
 
-"Resx" tilbyder en centraliseret tilgang til at håndtere al tekst, der anvendes i en applikation. Dette gør det enkelt at implementere flersproget support og sikre, at applikationen kan nå ud til et bredere publikum med forskellige sprogpræferencer.
+"Resx" offers a centralized approach to managing all text used in an application. This makes it simple to implement multilingual support and ensures that the application can reach a wider audience with different language preferences.
 
-De genererede koder fra dette værktøj er resx-filer. Disse filer er kendte og almindeligt anvendte inden for [Localization in .NET](https://learn.microsoft.com/en-us/dotnet/core/extensions/localization). Resx-filer er XML-baserede og indeholder nøgle-værdi-par, hvor nøglen repræsenterer en unik identifikator for en given tekststreng, mens værdien repræsenterer selve teksten.
+The generated codes from this tool are resx files. These files are known and commonly used within [Localization in .NET](https://learn.microsoft.com/en-us/dotnet/core/extensions/localization). Resx files are XML-based and contain key-value pairs, where the key represents a unique identifier for a given text string, while the value represents the text itself.
 
-Med "Resx" kan udviklere nemt:
+With "Resx", developers can easily:
 
-1. **Centralisere tekst**: Alle tekstbeskeder, labels og UI-elementtekster kan centralt styres fra resx-filerne.
+1. **Centralize text**: All text messages, labels, and UI element texts can be centrally managed from the resx files.
   
-2. **Skifte sprog dynamisk**: Ved at skifte den aktive resx-fil kan applikationen dynamisk ændre sprog, hvilket gør det nemt at skifte mellem forskellige sprogversioner.
+2. **Switch languages dynamically**: By switching the active resx file, the application can dynamically change languages, making it easy to switch between different language versions.
 
-3. **Understøtte flere sprog**: Ved at tilføje flere sprog, kan udviklere nemt udvide deres applikations sprogunderstøttelse.
+3. **Support multiple languages**: By adding more languages, developers can easily expand their application's language support.
 
-4. **Vedligeholde tekst**: Ændringer i tekst eller tilføjelse af nye tekster kan nemt implementeres ved at opdatere "Resx" uden nødvendigvis at skulle ændre selve koden i applikationen.
+4. **Maintain text**: Changes in text or the addition of new texts can easily be implemented by updating the "Resx" without necessarily having to change the actual code in the application.
 
-5. **Integrere med .NET**: Da resx-formatet er dybt integreret med .NET-platformen, kan udviklere drage fordel af værktøjer og biblioteker, der specifikt er designet til at arbejde med resx-filer.
+5. **Integrate with .NET**: Since the resx format is deeply integrated with the .NET platform, developers can take advantage of tools and libraries specifically designed to work with resx files.
 
-For at maksimere fordelene ved "Resx" bør udviklere sørge for konsekvent at referere til tekster via deres resx-nøgler i stedet for at hardkode tekststrengene direkte i koden. Dette vil sikre, at teksten kan ændres eller oversættes uden at skulle dykke dybt ned i applikationskoden.
+To maximize the benefits of "Resx", developers should ensure to consistently refer to texts via their resx keys instead of hardcoding text strings directly into the code. This will ensure that the text can be changed or translated without having to dive deep into the application code.
 
-## Konfiguraitionen
+## Configuration
 
-Efter tilføjelsen af "Resx"-arkitekturelement bruges nedenstående til at konfigurerer tekster:
+After adding the "Resx" architectural element, the following is used to configure texts:
 
 ![Alt text](media/resx.png)
 
-Som standard er der to kolonner "Name" og "Danish (Denmark)". I "Name" indtastes nøglen der bruges i koden og i "Danish (Denmark)" indtastes den tekst der skal præsenteres i den danske udgave af applikationen.
+By default, there are two columns "Name" and "Danish (Denmark)". In "Name", enter the key used in the code and in "Danish (Denmark)" enter the text to be presented in the Danish version of the application.
 
-Det er selvfølgelig muligt at tilføje yderligere sprog. Klik på "Add/Remove culture" for at gøre dette.
+Of course, it is possible to add additional languages. Click on "Add/Remove culture" to do this.
 
 ![Alt text](media/resx-1.png)
 
-Her er vist et eksempel på en applikation, der understøtter engelsk, dansk, svensk og norsk.
+Here is shown an example of an application that supports English, Danish, Swedish, and Norwegian.
 
 ![Alt text](media/resx-2.png)
 
-Når al tekst er indtastet, klik på "Create Code" og der genereres en resx-fil pr sprog.
-
-
-
+When all text is entered, click on "Create Code" and a resx file is generated per language.

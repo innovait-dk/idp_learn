@@ -1,19 +1,18 @@
-**Designerens Arkitekturelementer**
+**Designer's Architectural Elements**
 
-Nedenfor er en oversigt over nøgleelementerne i designeren, og hvordan de fungerer inden for applikationsstruktur:
+Below is an overview of the key elements in the designer, and how they function within the application structure:
 
-| **Element**  | **Funktionalitet** |
+| **Element**  | **Functionality** |
 |--------------|--------------------|
-| **Database** | Central meta-data lagring af databasen, fundamentet for andre elementer. |
-| **Entity Framework** | Genererer kode ud fra databasens meta-data. |
-| **Validation** | Skaber kode for validering, optimeret med FluentValidation-frameworket, ud fra databasens meta-data. |
-| **Resx** | Muliggør flersproget support i applikationen. |
-| **Resx Syncing EntityCaptions** | Tilpassede tekstbeskrivelser for entiteter i brugergrænsefladen. |
-| **User Interface** | Genererer brugergrænsefladekode for hver entitet baseret på meta-data. |
-| **AppSettings** | Globale applikationsparametre opbevaret i SQL-databasen. |
-| **UserSettings** | Brugerspecifikke parametre gemt i SQL-databasen. |
-| **Revision** | Genererer kode til revisionssporing og SQL-scripts for detaljeret tabelrevision og præsentation i brugergrænsefladen. |
-| **Security** | Giver funktionalitet til at definere roller og operationer for sikkerhedsstyring. |
+| **Database** | Central meta-data storage of the database, the foundation for other elements. |
+| **Entity Framework** | Generates code from the database's meta-data. |
+| **Validation** | Creates code for validation, optimized with the FluentValidation framework, from the database's meta-data. |
+| **Resx** | Enables multilingual support in the application. |
+| **Resx Syncing EntityCaptions** | Custom text descriptions for entities in the user interface. |
+| **User Interface** | Generates user interface code for each entity based on meta-data. |
+| **AppSettings** | Global application parameters stored in the SQL database. |
+| **UserSettings** | User-specific parameters stored in the SQL database. |
+| **Revision** | Generates code for revision tracking and SQL scripts for detailed table revision and presentation in the user interface. |
+| **Security** | Provides functionality to define roles and operations for security management. |
 
-
-Disse beskrives næremere under "Arkitektur elementer".
+These are described in more detail under "Architectural Elements".

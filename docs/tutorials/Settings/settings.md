@@ -1,31 +1,31 @@
-I konfigurationen af app- og user-settings defineres de properties, der skal bruges. Nedenfor er vist en konfiguration for UserSettings.
+In the configuration of app and user settings, the properties to be used are defined. Below is a configuration for UserSettings.
 
 ![Alt text](media/settings.png)
 
-Her ønskes det at gemme dato/tid for hvornår brugeren sidst var logget på systemet.
+Here, it is desired to save the date/time of when the user last logged into the system.
 
-Efter "Create code" er der kodegeneret nedenstående "UserSettings.tt.cs".
+After "Create code", the following "UserSettings.tt.cs" has been code-generated.
 ```cs
-	public partial interface IUserSetting
-	{
-	        System.DateTime LastLoginDateTime  { get; set; }
-	}
+    public partial interface IUserSetting
+    {
+            System.DateTime LastLoginDateTime  { get; set; }
+    }
 
- 	public partial class UserSetting: IUserSetting
-	{
-	    ///<summary>
+     public partial class UserSetting: IUserSetting
+    {
+        ///<summary>
         ///Comment
         ///</summary>
-		[Category("Misc")]
+        [Category("Misc")]
         [Description("Comment ")]
-		[DisplayName("LastLoginDateTime")]
-		[Browsable(true)]
+        [DisplayName("LastLoginDateTime")]
+        [Browsable(true)]
         [ReadOnly(false)]
         public System.DateTime LastLoginDateTime  { get; set; }
-	}
+    }
 ```
 
-Det er også muligt at tilpasse denne via en partial class. Der er en "Code Task", der hedder "UserSettings" som laver en partial class i filen "UserSettings.cs". Den kan tilpasses til f.eks. nedenstående
+It is also possible to customize this via a partial class. There is a "Code Task" called "UserSettings" which creates a partial class in the file "UserSettings.cs". It can be customized to, for example, the following
 
 
 ```cs
@@ -43,10 +43,10 @@ Det er også muligt at tilpasse denne via en partial class. Der er en "Code Task
     }
 ```
 
-Når applikationen lukkes gemmes UserSettings i SQL databasen og dermed gemmes hvornår brugeren sidst har været logget på.
+When the application closes, UserSettings are saved in the SQL database and thus when the user last logged in is saved.
 
-Det er selvfølgelig også muligt at tilføje properties og metoder.
+Of course, it is also possible to add properties and methods.
 
-Interfacet "IUserSetting" kan injects i construtors og bruges i diverse klasser.
+The interface "IUserSetting" can be injected into constructors and used in various classes.
 
-Ovenstående gælder også hvis AppSettings skal tilpasses. Der er interfacet "IAppSetting".
+The above also applies if AppSettings need to be customized. There is the interface "IAppSetting". 

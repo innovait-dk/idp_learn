@@ -1,6 +1,4 @@
-# Andre Eksempeler
-
-
+# Other Examples
 
 ```csharp
     public partial class OrderDetailsValidator
@@ -9,30 +7,30 @@
         {
             RuleSet(RuleSetNames.PropertyRuleSetName, () =>
             {
-                //Opret simpel validering for et enkelt felt
+                //Create simple validation for a single field
                 RuleFor(ent => ent.UnitPrice).GreaterThanOrEqualTo((decimal)1)
                     .WithName(nameof(OrderDetails));
-                //Opret kompleks validering for et felt
+                //Create complex validation for a field
                 RuleFor(ent => ent.Discount).Must(ValidateDiscount)
-                    .WithMessage("Discount må ikke være højere end samlet pris")
+                    .WithMessage("Discount must not be higher than total price")
                     .WithName(nameof(OrderDetails));
             });
         }
 
         private bool ValidateDiscount(IOrderDetails obj, float arg)
         {
-            //The discount must not ex
+            //The discount must not exceed the total price
             return (obj.Discount > 0) && (obj.UnitPrice * obj.Quantity) > (decimal)obj.Discount;
         }
     }
 ```
 
-Hvilket vil resultere i valideringen vil blive vist i UI som følgende eksempel:
+This will result in the validation being displayed in the UI as follows:
 
-Simpel validering på UnitPrice
+Simple validation on UnitPrice
 
  ![image.png](media/custom-validation_0.png)
 
-Kompleks validering på Discount
+Complex validation on Discount
 
  ![image.png](media/custom-validation_1.png)

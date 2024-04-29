@@ -1,19 +1,20 @@
-# 1 felt (bytes)
+# 1 field (bytes)
 
-Hvis der kun er et felt (som i Category) varbinary(max) og der ikke er konfigureret noget på kontrollerne, så vil "Image - show" vise billeder og ikke vise noget ved andre fil-typer.
+If there is only one field (as in Category) varbinary(max) and nothing is configured on the controllers, then "Image - show" will display images and not display anything for other file types.
 
-Her er det en billede-fil
+Here it is an image file
  ![image.png](media/et-felt_0.png)
 
-Her er det en excel-fil, hvor der ikke vises noget
+Here it is an Excel file, where nothing is displayed
  ![image.png](media/et-felt_1.png)
 
-For "Image - Editor" er det muligt at uploade ved Insert eller erstatte/slette ved Update.
+For "Image - Editor", it is possible to upload at Insert or replace/delete at Update.
 
-Ved Update:
+
+At Update:
  ![image.png](media/et-felt_2.png)
 
-Ved Insert:
+At Insert:
  ![image.png](media/et-felt_3.png)
 
-Ved klik på "Erstat fil" eller "Tilføj fil" kommer der en filedialog frem hvorfra man kan vælge en fil.
+When clicking on "Replace file" or "Add file", a file dialog appears from which you can choose a file.

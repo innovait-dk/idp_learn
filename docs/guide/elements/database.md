@@ -1,14 +1,12 @@
 # Database
 
-Formålet med "Database" er at konfigurere, hvilken database du vil bruge i
-applikationen.
+The purpose of "Database" is to configure which database you want to use in the application.
 
-Der er 2 konfigurationsmuligheder:
+There are 2 configuration options:
 
-- Servernavn: navnet på SQL Serveren
-- Database: navnet på databasen
+- Server name: the name of the SQL Server
+- Database: the name of the database
 
-Ved at indtaste navnet på SQL Serveren præsenteres databasenavne i
-rullelisten under "Database". Vælg her Northwind og klik på "Gem".
+By entering the name of the SQL Server, the database names are presented in the dropdown list under "Database". Here, select Northwind and click on "Save".
 
 ![](../media/database_0.png)

@@ -1,24 +1,24 @@
 # Security
 
-Formålet med ”Security” er at styre hvad den enkelte bruger har adgang til i applikationen.
+The purpose of "Security" is to control what each user has access to in the application.
 
-I elementet "Security" konfigureres 2 ting:
+In the "Security" element, two things are configured:
 
 - Operations
 - Roles
 
 ## Operations
 
-Operations er det man vil spørge på om brugeren har adgang til. F.eks. ved en knap.
+Operations are what you will ask if the user has access to. For example, with a button.
 
 ![Alt text](media/security.png)
 
-Her er bl.a. defineret "CanAccessAdmin" og den bruges til at spørge på om man skal have adgang til "Administration" i applikationen.
+Here, "CanAccessAdmin" is defined among other things, and it is used to ask if one should have access to "Administration" in the application.
 
 ## Roles
 
-Under roles defineres de roller, som er i applikationen. I dette tilfælde er der defineret "Users" og "Admin" (Administratorer).
+Under roles, the roles that are in the application are defined. In this case, "Users" and "Admin" (Administrators) are defined.
 
 ![Alt text](media/security-1.png)
 
-Nedenunder vælges hvilke operations den enkelte rolle har adgang til.  I dette tilfælde så har administrator-rollen adgang til "CanAccessAdmin".
+Below, you choose which operations each role has access to. In this case, the administrator role has access to "CanAccessAdmin".

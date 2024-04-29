@@ -1,20 +1,21 @@
-# 3 felter (bytes,-filename-og-thumbnail)
+# 3 fields (bytes, filename, and thumbnail)
 
-I nogle tilfælde vil man gerne gemme et thumbnail af et billede og vise det på show-siden i stedet for original-billedet. Det typisk hvor der bliver uploadet store billeder og man af performance-hensyn ikke ønsker at hive f.eks. et 10mb billede ud af databasen hver gang man går ind på en show-side.
+In some cases, you may want to save a thumbnail of an image and display it on the show page instead of the original image. This is typically where large images are uploaded and for performance reasons, you do not want to pull, for example, a 10mb image out of the database every time you go to a show page.
 
-Her tilføjer vi et felt til tabellen Category "PictureThumbnail" varbinary(max).
+Here we add a field to the Category table "PictureThumbnail" varbinary(max).
 
-Konfiguration vil se således ud.
+The configuration will look like this.
 
  ![image.png](../../media/3-felter_0.png)
 
-Feltet "Picture" er fjernet fra show og "PictureThumbnail" er tilføjet til show.
+The "Picture" field has been removed from the show and "PictureThumbnail" has been added to the show.
 
-Konfigurationen af UpdateControl på "Picture" vil se således ud:
+The configuration of the UpdateControl on "Picture" will look like this:
 
  ![image.png](../../media/3-felter_1.png)
 
-Der er konfigurereret hvilket felt, der indeholder thumbnail. Det er i selve upload af en fil at "PictureThumbnail" feltet bliver opdateret med et Thumbnail.
+The field containing the thumbnail is configured. It is in the actual upload of a file that the "PictureThumbnail" field is updated with a Thumbnail.
 
-Hvis man vil understøtte at vise ikoner i "PictureThumnail" feltet skal man konfigurere kontrollens "FilenameField" property:
+If you want to support displaying icons in the "PictureThumbnail" field, you need to configure the control's "FilenameField" property:
+
  ![image.png](../../media/3-felter_2.png)

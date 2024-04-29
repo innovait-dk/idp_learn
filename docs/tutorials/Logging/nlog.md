@@ -1,18 +1,18 @@
-Der kan bruges forskellige slags 3. parts logging providers. [Som nævnt her](https://learn.microsoft.com/en-us/dotnet/core/extensions/logging-providers#third-party-logging-providers)
+Various kinds of 3rd party logging providers can be used. [As mentioned here](https://learn.microsoft.com/en-us/dotnet/core/extensions/logging-providers#third-party-logging-providers)
 
-Nedenfor er vist eksempel på at bruge [NLog](https://nlog-project.org/)
+Below is an example of using [NLog](https://nlog-project.org/)
 
-**Krav**: Det ønskes at bruge NLog til at gemme logs i tekst-filer. 
+**Requirement**: It is desired to use NLog to save logs in text files.
 
-**Opgave**: Tilføj "NLog.Extensions.Logging" nuget pakke, tilføj fil NLog.config og tilføj AddNLog() i App.xaml.cs
+**Task**: Add "NLog.Extensions.Logging" nuget package, add NLog.config file and add AddNLog() in App.xaml.cs
 
-**Udførelse**: 
+**Execution**: 
 
-1. Tilføj "NLog.Extensions.Logging" nuget pakke
+1. Add "NLog.Extensions.Logging" nuget package
 
-2. Opret ny tekst fil "NLog.config" og sæt "Copy to Output directory" -> "Copy Always"
+2. Create a new text file "NLog.config" and set "Copy to Output directory" -> "Copy Always"
 
-3. Kald metoden AddNLog() i App.xaml.cs
+3. Call the AddNLog() method in App.xaml.cs
 
 
 **NLog.config**:
@@ -40,23 +40,22 @@ Nedenfor er vist eksempel på at bruge [NLog](https://nlog-project.org/)
   </targets>
   <rules>
     <logger name="Microsoft.EntityFrameworkCore.Database.*" levels="Info" writeTo="DataLayer" final="true"  />
-	<logger name="Microsoft.EntityFrameworkCore.*" levels="Trace,Debug,Info,Warn"  final="true" />
+    <logger name="Microsoft.EntityFrameworkCore.*" levels="Trace,Debug,Info,Warn"  final="true" />
     <logger name="*" levels="Trace,Debug,Info,Warn" writeTo="Others" final="true"  />
     <logger name="*" levels="Error,Fatal" writeTo="Errors"  />
   </rules>
 </nlog>
 ```
 
-
 **App.xaml.cs**
 ```c#
-    protected override void ConfigurateBuilder(HostApplicationBuilder builder)
-    {
-        base.ConfigurateBuilder(builder);
-        builder.Logging.AddNLog();
-    }
+  protected override void ConfigurateBuilder(HostApplicationBuilder builder)
+  {
+    base.ConfigurateBuilder(builder);
+    builder.Logging.AddNLog();
+  }
 ```
 
-Nu logges alt ned i tekst-filer ud fra ovenstående rules i NLog.config. Nedenfor er vist eksempel på log-fil for tidligere eksempel [knap-klik-logging](log_application.md)
+Now everything is logged down in text files based on the above rules in NLog.config. Below is an example of a log file for the previous example [knap-klik-logging](log_application.md)
 
 ![Alt text](media/nlog.png)

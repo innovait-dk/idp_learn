@@ -1,20 +1,19 @@
 # Validation
 
-Formålet med "Validation" er at generere kode for valideringsreglerne for hver enkelt tabel/entitet. Eksempelvis, hvis en SQL-tabel indeholder et felt, der ikke må være "null", vil der blive genereret en valideringsregel, der sikrer, at denne regel overholdes. Dette vil også informere brugeren om, at feltet skal udfyldes.
+The purpose of "Validation" is to generate code for the validation rules for each table/entity. For example, if a SQL table contains a field that cannot be "null", a validation rule will be generated to ensure that this rule is adhered to. This will also inform the user that the field needs to be filled out.
 
-For at indføre "Validation", skal du først navigere til "Designer"-fanen og derefter klikke på "Add ArchitectureItem...". Herfra vælger du "Validation".
+To introduce "Validation", you first need to navigate to the "Designer" tab and then click on "Add ArchitectureItem...". From here, you choose "Validation".
 
-Dernæst har du mulighed for at vælge, hvilke entiteter der skal genereres valideringer for. På værktøjslinjen finder du en "Select all"-knap; ved at klikke på denne vil alle entiteter automatisk blive markeret.
+Next, you have the opportunity to choose which entities should have validations generated for them. On the toolbar, you will find a "Select all" button; by clicking on this, all entities will automatically be marked.
 
 ![](../media/validation_0.png)
 
-Efter at have gennemført konfigurationen, klikker du på "Create code"-knappen. Dette vil resultere i tilføjelsen af en ny fil ved navn "Validators.tt.cs" i entitetsmappen.
+After completing the configuration, you click on the "Create code" button. This will result in the addition of a new file named "Validators.tt.cs" in the entity folder.
 
-Når du nu starter applikationen og vælger "Shippers", efterfulgt af et klik på "Tilføj", vil du se følgende skærmbillede:
+Now when you start the application and select "Shippers", followed by a click on "Add", you will see the following screen:
 
 ![](../media/validation_1.png)
 
-Hvis du forsøger at klikke på "Gem" uden at have udfyldt nødvendige felter, vil følgende fejlmeddelelse blive præsenteret:
+If you try to click on "Save" without having filled out the necessary fields, the following error message will be presented:
 
 ![](../media/validation_2.png)
-

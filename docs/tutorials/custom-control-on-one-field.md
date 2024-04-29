@@ -1,16 +1,16 @@
-# "Custom control" på et felt
+# "Custom control" on a field
 
-Under UI IAD'en fremfindes det felt man ønsker tilknytte en custom control til.
+In the UI IAD, find the field you want to attach a custom control to.
 
- ![Alt text](media/custom-control-on-one-field.png)
+![Alt text](media/custom-control-on-one-field.png)
 
-I propertiesvinduet i Visual Studio, for det valgte felt, vælges den kontrollen "Custom control" for henholdsvis UpdateControl eller ShowControl. Alt efter om man ønsker kontroltypen i redigering eller blot i visning.
+In the properties window in Visual Studio, for the selected field, choose the "Custom control" for either UpdateControl or ShowControl. Depending on whether you want the control type in editing or just in viewing.
 
  ![image.png](../media/custom-control-på-et-felt_1.png)
 
-Klik "Create code" under ribbongruppen "Code for selected"
+Click "Create code" under the ribbon group "Code for selected"
 
-Under Controls for OrderDetails, vil der nu være oprettet en EditQuantityControl.xaml.
+Under Controls for OrderDetails, an EditQuantityControl.xaml will now be created.
 
  ![image.png](../media/custom-control-på-et-felt_3.png)
 
@@ -24,13 +24,13 @@ Under Controls for OrderDetails, vil der nu være oprettet en EditQuantityContro
              d:DesignHeight="300" d:DesignWidth="300"
              x:Name="EditQuantityControlName">
 
-			<TextBlock Text="{Binding Quantity}"/>
+            <TextBlock Text="{Binding Quantity}"/>
 </UserControl>
 ```
 
-Kontrollens datacontext vil være entiteten, og man vil kunne tilpasse kontrollen til at indeholde den editor man ønsker. 
+The control's data context will be the entity, and you will be able to customize the control to contain the editor you want.
 
-Eks:
+Example:
 
 ```xml
 <UserControl x:Class="NorthwindClient.UI.OrderDetails.Controls.EditQuantityControl"

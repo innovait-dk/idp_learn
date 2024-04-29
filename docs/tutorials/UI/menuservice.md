@@ -1,19 +1,19 @@
-Til hvert view er der en menu-service, som bestemmer hvordan toolbaren skal se ud i viewet.
+For each view, there is a menu service that determines how the toolbar should look in the view.
 
-Der kan tilføjes faneblade, grupper og knapper via servicen.
+Tabs, groups, and buttons can be added via the service.
 
-**Krav**: I show-viewet for Categories skal der være et faneblad "Do things", som indeholder en gruppe "Do all things" med en knap som viser en dialog.
+**Requirement**: In the show-view for Categories, there should be a tab "Do things", which contains a group "Do all things" with a button that displays a dialog.
 
-**Opgave**: I CategoriesShowMenuService tilføjes et faneblad, en gruppe og en menuknap.
+**Task**: In CategoriesShowMenuService, add a tab, a group, and a menu button.
 
-**Udførelse**: 
+**Execution**: 
 
-1. Vælg "User Interface".
-2. Vælg "Categories".
-3. Vælg fanebladet Show.
-4. Under "Code Tasks" vælges "MenuService" og klikke på "Add Code". 
+1. Select "User Interface".
+2. Select "Categories".
+3. Select the Show tab.
+4. Under "Code Tasks" select "MenuService" and click on "Add Code". 
 
-Der vil nu blive genereret en fil ved navn CategoriesShowMenuService.cs, som kan tilpasses som ønsket, som det er illustreret nedenfor.
+A file named CategoriesShowMenuService.cs will now be generated, which can be customized as desired, as illustrated below.
 
 ```cs
     public partial class CategoriesShowMenuService
@@ -29,6 +29,6 @@ Der vil nu blive genereret en fil ved navn CategoriesShowMenuService.cs, som kan
     }
 ```
 
-Show-viewet ser således ud:
+The show-view now looks like this:
 
 ![Alt text](media/menuservice.png)

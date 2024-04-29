@@ -1,23 +1,23 @@
 # View - Custom Show
 
-I nogle tilfælde vil man designe sin egen show-view helt fra bunden (xaml-mæssigt). 
+In some cases, you may want to design your own show-view from scratch (in terms of xaml).
 
-Eksemplet tager udgangspunkt i "Customers", hvor der laves et custom show-view.
+The example is based on "Customers", where a custom show-view is created.
 
-Ved at marker "Customers", marker fanebladet "Show", vælge "View - Custom " under "Code Tasks" og klik "Add Code".
+By marking "Customers", selecting the "Show" tab, choosing "View - Custom" under "Code Tasks", and clicking "Add Code".
 
 ![Alt text](media/custom-show-view-1.png)
 
-For at det nye custom-show-view bruges i applikationen skal det registreres i CustomersModule.
+For the new custom-show-view to be used in the application, it must be registered in the CustomersModule.
 
-Hvordan det gøres står  som kommentar i koden i custom-show-view'et:
+How to do this is stated as a comment in the code in the custom-show-view:
 
 ```csharp
         //Implementation information:
-        //Register the view in the CustomersModule in the partial methode: AfterRegisterTypes
+        //Register the view in the CustomersModule in the partial method: AfterRegisterTypes
         //
         //containerRegistry.RegisterForNavigation<Views.Show.CustomersShowViewCustom, Views.Show.CustomersShowViewModel>(nameof(Views.Show.CustomersShowView));
 
 ```
 
-Samme fremgangsmåde kan gøres List, Edit og Insert.
+The same procedure can be done for List, Edit, and Insert.
