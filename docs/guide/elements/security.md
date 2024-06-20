@@ -22,3 +22,4 @@ Under roles, the roles that are in the application are defined. In this case, "U
 ![Alt text](media/security-1.png)
 
 Below, you choose which operations each role has access to. In this case, the administrator role has access to "CanAccessAdmin".
+

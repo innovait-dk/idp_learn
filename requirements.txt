@@ -1,4 +1,4 @@
-mkdocs-material==9.5.19
+mkdocs-material==9.5.27
 mkdocs-glightbox==0.3.7
 mkdocs-unused-files==0.2.0
 mkdocs-htmlproofer-plugin==1.2.1

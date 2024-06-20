@@ -111,7 +111,7 @@ By default, all fields in show/edit/insert are displayed in a row. This can be c
 
 In the "UI Designer", a grid with x number of Columns and x number of Rows is designed. A cell can then contain a Group of fields. Below is shown a configuration of a grid for Employees
 
-![Alt text](media/wpf-ui-7.png)
+![alt text](media/wpf-ui-9.png)
 
 This configuration makes the show/edit/insert will be displayed as below:
 

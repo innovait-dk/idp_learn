@@ -34,31 +34,40 @@ theme:
    favicon: media/favicon.ico
    logo: media/innova.png
    palette:
+      scheme: default
       primary: white
    font:
+      text: Roboto
       code: Roboto Mono
-     
+extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
 nav:
 - "Home" : "index.md"
 - "Get Started" : 
    - "Setting up Visual Studio" : "gettingstarted/visualstudio.md"
    - "First application" : "guide/wizard.md"
-- "Designer" : 
-   - "Introduction to designer" : "guide/elements/designer.md"
-   - "The process" : "guide/elements/concept.md"
-   - "Overview of architecture elements" : "guide/elements/elements-overview.md"
-- "Architecture elements" : 
-   - "Database" : "guide/elements/database.md"
-   - "Entity Framework" : "guide/elements/entityframework.md"
-   - "Validation" : "guide/elements/validation.md"
-   - "Resx" : "guide/elements/resx.md"
-   - "Resx Syncing EntityCaptions" : "guide/elements/captions.md"
-   - "User Interface" : "guide/elements/wpf-ui.md"
-   - "AppSettings" : "guide/elements/appsettings.md"
-   - "UserSettings" : "guide/elements/usersettings.md"
-   - "Revision" : "guide/elements/revision.md"
-   - "Security" : "guide/elements/security.md"
-   
+   - "Designer" : 
+      - "Introduction to designer" : "guide/elements/designer.md"
+      - "The process" : "guide/elements/concept.md"
+      - "Overview of architecture elements" : "guide/elements/elements-overview.md"
+   - "Architecture elements" : 
+      - "Database" : "guide/elements/database.md"
+      - "Entity Framework" : "guide/elements/entityframework.md"
+      - "Validation" : "guide/elements/validation.md"
+      - "Resx" : "guide/elements/resx.md"
+      - "Resx Syncing EntityCaptions" : "guide/elements/captions.md"
+      - "User Interface" : "guide/elements/wpf-ui.md"
+      - "AppSettings" : "guide/elements/appsettings.md"
+      - "UserSettings" : "guide/elements/usersettings.md"
+      - "Revision" : "guide/elements/revision.md"
+      - "Security" : "guide/elements/security.md" 
 - "How-To-Guides" : 
    - "How to customize" :
       - "Partial classes" : "tutorials/index.md"
@@ -95,11 +104,23 @@ nav:
          - "Create quickfind" : "tutorials/add-quickfind.md"
          - "Search" : "tutorials/search.md"
    - "App and UserSettings" : "tutorials/Settings/settings.md"
+   - "Security":
+      - "Add user to roles" : "tutorials/Security/addusertoroles.md"
+      - "Customize ApplicationSecurity" : "tutorials/Security/customizesecuritysetting.md"
    - "Logging" :
       - "Log in the application" : "tutorials/Logging/log_application.md"
       - "Use of NLog" : "tutorials/Logging/nlog.md"
    - "Contribute to the documentation" : "gettingstarted/contribution.md"
    - "Other frameworks" : "gettingstarted/otherframeworks.md"
+- "App extensions" : 
+   - "About App Extensions" : "appextensions/index.md"
+   - "Log Extension" : "appextensions/log/index.md"
+   - "Security Extension" : 
+      - "Concept" : "appextensions/security/index.md"
+      - "Implementation" : "appextensions/security/implement.md"
+- "Release notes" : 
+   - "Current version" : "releasenotes/currentversion.md"
+   - "Previous versions" : "releasenotes/previousversions.md"
 - "Background" :
     - "The idea behind" : "guide/need.md"
     - "The vision" : "guide/intro.md"
