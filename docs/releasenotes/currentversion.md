@@ -5,6 +5,8 @@ The first AppExtensions has landed. This version includes the following AppExten
 -	[Logging](../appextensions/log/index.md)
 -	[Security](../appextensions/security/index.md)
 
+All AppExtensions are created with IDP and are fully opensourced (for customers). And yes, you can make your own AppExtensions.
+
 ### Designer
 
 - Database: The connectionstring is no longer in the iad-file. It uses the connectionstring in the app.config. [See here](../guide//elements/database.md)
