@@ -118,6 +118,7 @@ nav:
    - "Security Extension" : 
       - "Concept" : "appextensions/security/index.md"
       - "Implementation" : "appextensions/security/implement.md"
+      - "Customize" : "appextensions/security/customize.md"
 - "Release notes" : 
    - "Current version" : "releasenotes/currentversion.md"
    - "Previous versions" : "releasenotes/previousversions.md"
