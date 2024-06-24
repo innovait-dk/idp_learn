@@ -5,6 +5,28 @@ The Log Extension provides two main features:
 
 To implement the Log Extension, follow the instructions in the `readme.txt` that appears in Visual Studio after adding the extension.
 
+## Implementation
+
+The SQL-script creates 1 table and 1 stored procedure. The table is shown below. This table contains all the logs.
+
+![alt text](media/index-3.png)
+
+The stored procedure `[AppLog].[DeleteLog]` deletes log x number days back. It can be setup in SQL schedule job so the table only contains for example the last 300 days logs.
+
+```sql
+CREATE PROCEDURE [AppLog].[DeleteLog]
+@numberOfDaysBack int
+AS
+BEGIN
+
+declare @temp int = @numberOfDaysBack*-1
+
+    DELETE [AppLog].[Log]
+    WHERE  [LoggedTime] < DATEADD(day, @temp, getdate());
+END
+```
+
+
 ## User Interface
 
 Once the Log Extension is implemented, you will have a user interface for viewing and searching logs.

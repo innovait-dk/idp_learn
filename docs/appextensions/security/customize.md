@@ -187,10 +187,13 @@ The last step is to set the values in `CategoriesThatCanBeEdited`:
      {
          await base.Build().ConfigureAwait(false);
 
-         //_permission holds the roles, groups, operations of the current user.
-         var groupGuids = _permissions.SecurityGroups.Select(e => e.SecurityGroupGuid).ToList();
+             if (this.Settings.CanEditProducts)
+            {
+                //_permission holds the roles, groups, operations of the current user.
+                var groupGuids = _permissions.SecurityGroups.Select(e => e.SecurityGroupGuid).ToList();
 
-         this.Settings.CategoriesThatCanBeEdited = await _categoriesEntityService.GetProductManagersCategories(groupGuids).ConfigureAwait(false);
+                this.Settings.CategoriesThatCanBeEdited = await _categoriesEntityService.GetProductManagersCategories(groupGuids).ConfigureAwait(false);
+            }
      }
  }
 ```

@@ -1,4 +1,4 @@
-## 2024.6.17
+## 2024.6
 
 The first AppExtensions has landed. This version includes the following AppExtensions:
 
